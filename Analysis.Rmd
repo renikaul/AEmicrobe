@@ -1,0 +1,399 @@
+---
+title: "Microbial Allee Effect"
+author: "RajReni Kaul"
+date: "12/12/2014"
+output: pdf_document
+---
+
+# Methods
+## Experiment
+  Viable Vibrio fisheri cells were isolated from an exponentially growing culture using FlowCytometery. Populations were exposed to either a good environment (LBS), poor environment (minimal media), or poor environment with predation (minimal media with 133 Cafeteria/mL). The good environment populations were cultured in 200uL and initial population size increased geometrically from 1 to 2048. The other conditions were cultured in 75uL and initial population size ranged from 1 to 64 (semi-geometric increase). Populations were grown for a set period of time, after which the population was scored as "established (1)" or "fail to establish (0)" based on a minimum threshold for opitcal density or fluorescence. 
+  
+## Model Fitting
+  The presence of Allee effects was tested based on Dennis, B. 2002. Allee effects in stochastic populations. Oikos 96: 389-401. Demographic stochasticity, which can produce Allee-like behavior, can be differentiated from true Allee dynamics when examining the probability of extinction/establishment as a function of population size.  Populations subject to Allee effects have very different  probabilities of extinction above and below the lower critial size. This dramatic change in rates results in an inflection point at the critical population size. Populations subject to demographic noise will lack this inflection point in the probability of extinction. The presence of an inflection point can then surve as a test for the presence of an Allee effect. We used the Weibull function that will be sigmoidal (ie. have an inflection point) when $k>1$. 
+$$
+\begin{aligned}
+    y &= 1-e^{(\frac{-x}{\lambda})^{k}} && \text{Expression for Weibull} \\
+   \ddot{x} &= \lambda \sqrt[k]{\frac{k-1}{k}} && \text{Inflection Point of Sigmoid} 
+\end{aligned}
+$$
+
+In this case, y is probability of establishment, and x is the initial population size. 
+
+
+```{r parameterthreshold, echo=FALSE}
+#plot simulated data, log transformed with fitted line
+Y<-c(1,2,4,8,16,32,64,128,256,512,1024,2048)
+ltran<-log(Y+1)
+x<-seq(0,2048, by=.1)
+plot(NA, xlim=c(0,8), ylim=c(0,1),xaxt='n', xlab='Initial Population', main='Simulated Data', ylab='Probability of Establishment')
+axis(1, at=ltran, labels=Y)
+#plot(NA, ylim=c(0,1), xlim=c(0,250))
+#plot weibull line with given parameters
+
+#par.series= k,l
+par.series=matrix(c(0.5,0.5, #black
+                      5,0.5, #red
+                    0.5,5,   #green
+                      1.5,1.5,  #blue
+                      5,5), #light blue
+                  nrow=2)
+
+for (i in 1:length(par.series[1,])){
+  k<- par.series[1,i]
+  l<- par.series[2,i]
+  lgy<-1-exp(-(log(x+1)/l)^k)
+lines(lgy~log(x+1), col=i) 
+}
+
+text(x=0.5, y=0.6, label='k=l=0.5', col=1)
+text(x=0.42, y=0.9, label='k=5, l=0.5', col=2)
+text(x=1.8, y=0.4, label='k=0.5, l=5', col=3)
+text(x=1.5, y=0.7, label='k=l=1.5', col=4)
+text(x=4.5, y=0.27, label='k=l=5', col=5)
+```
+
+The inflection point is bounded between (0, $\lambda$), therefor the threshold to detect an Allee effect should include $k > 1$ and $\lambda > 1$ cell/mL. Since different volume was used for the good environment, the $\lambda$ threshold differs, 0.2 for the good environment and 0.075 for the poor environment. For ease of comparison, all treatments were converted to the same scale of cells/mL before parameter estimation. Population size was log transformed for model fitting.
+
+
+```{r source, echo=FALSE, warning=FALSE, message=FALSE}
+#Require Scripts
+source('script/pr.reformat.R') #converts H1 data into easy to use formate
+source('script/mlefunctions2.R') #MLE fitting functions
+source('script/simfunctions.R') #simulates data with known AE strength
+source('script/preprocessing.R') #functions that summarize data and add experimental treatment info.
+#libraries not in scripts
+library(reshape2)
+library(gplots)
+
+#constants
+thres<-0.25 #OD values required to call population established
+```
+#Data Prep
+ Need to currate data files: 
+ -type
+ -plate
+
+## Good Environment
+The data for the good environment was collected at a different time/trials. Three trials of 96well plates were run for the good environment. The following code chunk starts with the OD by time then:
+1. Combines all 3 trials
+2. Adds treatment information for each well
+3. Determines the time it took each well to reach the minimum detection limit
+4. Determine the max value or population size for each well
+5. Key populations as established/not based on max value
+6. Calculate summary stats for the populations that established
+
+The output of this process is saved in 'demo.sum'. The populations were grouped by treatment to calculate summary statistics, this is saved in 'demo.stat'. 
+```{r goodenvironment}
+######################
+#Reshape data files##
+#####################
+
+#Demographic data is split across 3 96 well plates
+#Demographic trial data
+read.csv('data/demo_pl1.csv',header=T)->d1
+pr.reformat('data/demo_pl2.txt')->d2
+pr.reformat('data/demo_pl3.txt')-> d3
+
+###Need to remove uness columns
+#add sampling info to data not recorded by plate reader
+plate<-c(1)
+cbind(plate,d1)->d1
+plate<-c(2)
+cbind(plate,d2)->d2
+plate<-c(3)
+cbind(plate, d3)->d3
+
+rbind(d1[,-c(3,4,5)],d2[,-c(3,4)],d3[,-c(3,4)])->data
+#reshape data
+#md<-melt(d, id=c("plate","Measurment"), variable.name="Well", value.name="Growth")
+
+#read in plate maps
+read.csv('data/demoplatemap.csv', header=T)-> p3
+
+#calculate summary stat
+
+ttothreshold(data=data,cat.type=data$plate,n.cat=3,thres=0.25, convert=(5/60))->demo.sum
+#add experimental treatment info to each population
+inner_join(demo.sum,p3, by='Well')->demo.sum
+#prep data by grouping in experimental treatments of "Initial" population size
+demo.group<- group_by(demo.sum, Initial)
+
+demo.stat<-summarise(demo.group, p.N=length(persist), p.ave=mean(persist), p.sd=sd(persist), est.N=length.na(hour), est.ave=mean.na(hour), est.sd=sd.na(hour), y.N=length(new.yield[which(new.yield>0)]), y.ave=mean(new.yield[which(new.yield>0)]), y.sd=sd(new.yield[which(new.yield>0)]))
+
+demo.stat[which(demo.stat$Initial>0),]->demo.stat #remove negative control wells
+(demo.stat$Initial/200)*75->adj.initial #density of initial population (cells/mL)
+cbind(adj.initial, demo.stat)->demo.stat
+
+#demo.sum has info by well
+#demo.stat has summary statistics by treatment
+```
+
+## Poor and Predation Environment: Trial 15
+The data for the poor and predation environment is from Trial 15, which used a 384 well plate. The plate was read for OD and fluorescence. Fluorescence was read at 3 sensitivity levels. All levels lead to the same patterns. 
+The following chunk reads in the combined OD and RFU by time then:
+
+1.  Assigns read type 1 through 4 (type 1: OD, type 2-4: fluorsecence at different sensitivity)
+2.  Adds treatment information for each well
+3.  Determines the time it took each well to reach the minimum detection limit
+4.  Determine the max value or population size for each well
+5.  Key populations as established/not based on max value
+6.  Calculate summary stats for the populations that established
+
+The out put of this process is saved as 'final.sum'. The populations were grouped by treatment to calculate summary statistic, this is saved in 'stat'. 
+
+```{r poorpredenvironment}
+#Trial 15 full data
+pr.reformat('data/11-18-13-T15_ALL.txt')->T15raw #this is a big file, takes a few seconds to load
+T15raw[,-c(1:3)]->T15 #remove non-informative col
+Type=c(1:4) #as in read type
+Time<-sort(rep(c(1:381),4)) #time in read number
+
+cbind(Time,Type,T15)->T15
+#reshape data
+mT15<-melt(T15, id=c("Type", "Time"), variable.name="Well", value.name="Growth")
+
+#read in plate maps
+read.csv('data/platemap384.csv', header=T)-> p1
+
+#Two data types
+#T15
+#mT15
+#Only interested in OD data, so pull out type 1 from T15
+T15[which(T15$Type==1),]->tempdata
+ttothreshold(data=tempdata,cat.type=tempdata$Type,n.cat=1,thres=0.25, convert=.25)->sum
+#add experimental treatment info to well
+inner_join(sum,p1, by='Well')->final.sum
+#group by experimental treatments
+grouped<- group_by(final.sum,  Initial, Cafeteria)
+
+stat<-summarise(grouped, p.N=length(persist), p.ave=mean(persist), p.sd=sd(persist), p.total=sum(persist), y.N=length(new.yield[which(new.yield>0)]), y.ave=mean(new.yield[which(new.yield>0)]), y.sd=sd(new.yield[which(new.yield>0)]), est.N=length.na(est), est.ave=mean.na(est), est.sd=sd.na(est))
+
+stat[order(stat$Cafeteria),]->stat
+as.data.frame(stat)->stat
+
+stat[which(stat$Initial>0),]->stat #remove negative control wells
+(stat$Initial/75)*1000->adj.initial #density of initial population (cells/mL)
+cbind(adj.initial, stat)->stat
+
+
+#final.sum has info by well
+#stat has summary statistics by treatment
+```
+
+```{r}
+plotCI(y=demo.stat$y.ave, x=log(demo.stat$adj.initial), uiw=demo.stat$y.sd, main='yield', ylim=c(0,1), xlim=c(0,8), gap=0)
+plotCI(y=stat$y.ave, x=log(stat$adj.initial), uiw=stat$y.sd, add=TRUE, col=ifelse(stat$Cafeteria==0,'blue','red'), gap=0)
+```
+# Results
+  An Allee effect was detected in ALL treatments. The strength of the Allee effect, as measured by the inflection point or $\lambda$, increased with decreasing environmental quality. 
+  
+```{r dataprep, echo=FALSE}
+# #n=36 in good environment
+# read.csv('data/All_data.csv',header=T)->good
+# #remove controls
+# good[which(good$Initial.Population>0),]->good
+# 
+# #pull out data, convert to density (cells/mL)
+# x <- log(good$Initial.Population*5) #Initial population in 200uL * 5 = cells/mL 
+# y <- good$Persist
+# #Prep data for mle2
+# g<-list(x=x,y=y)
+
+demo.sum[which(demo.sum$Initial>0),]->demo.sum
+#pull out data, convert to density (cells/mL)
+x <- log(demo.sum$Initial*5) #Initial population in 200uL * 5 = cells/mL 
+y <- demo.sum$persist
+#Prep data for mle2
+g<-list(x=x,y=y)
+
+
+
+
+#n=12 384 well plate
+#read.csv('data/finalsum.csv', header=T)->d
+#Pull out controls
+#d[which(d$Initial>0),]->d
+#d[which(d$Type==1),]->d
+#d[order(d$Initial),]->d
+
+
+final.sum->d
+#Pull out controls
+d[which(d$Initial>0),]->d
+#Poor Environment
+ d[which(d$Cafeteria==0),]->poor
+#pull out data
+#x <- log(poor$Initial+1)
+x <- log(poor$Initial*(1000/75)) #Initial population in 75uL *(1000/75)= cells/mL
+y <- poor$persist
+#Prep data for mle2
+b<-list(x=x,y=y)
+
+#Poor with Predation
+d[which(d$Cafeteria==10),]->pred
+#pull out data
+#x<-log(pred$Initial+1)
+x <- log(pred$Initial*(1000/75)) #Initial population in 75uL *(1000/75)= cells/mL
+y <- pred$persist
+#Prep data for mle2
+c<-list(x=x,y=y)
+
+
+
+```
+
+
+```{r mle, echo=FALSE}
+#calculate MLE surface
+goodfit<-mle.estimate(data=g)
+poorfit<-mle.estimate(data=b)
+predfit<-mle.estimate(data=c)
+
+#plot CI around point estimates
+#con.plot=function(window,res,data,model,n,title, ring=1, surface=FALSE, same=TRUE)
+con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=g, model=goodfit, title='', same=FALSE, ring='black',ylim=c(0,12),xlim=c(0,10))
+con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=b, model=poorfit, title='', same=TRUE, ring='blue')
+con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=c, model=predfit, title='', same=TRUE, ring='red')
+mtext('k',2, line=3)
+mtext(expression(paste( lambda, " ( log (cells/mL) )")),1, line=3)
+
+mtext('Parameter Estimate', 3, line=1)
+#add points
+points(coef(goodfit)[2]~coef(goodfit)[1], pch=19, cex=0.5)
+points(coef(poorfit)[2]~coef(poorfit)[1], pch=19, cex=0.5, col='blue')
+points(coef(predfit)[2]~coef(predfit)[1], pch=19, cex=0.5, col='red')
+#add legend
+legend('topright', legend=c('Good', 'Poor', 'Poor+Predation'),title='Environment', col=c(1,4,2), pch=c(19), lty=1, bty='n')
+#add hypothesis test
+abline(h=1, lty=2)
+abline(v=0)
+text(x=.04, y=6, labels="Critical \n Population = 1", srt=90)
+text(x=4.5, y=1.25, labels="Sigmoid Present")
+```
+
+```{r inflection, echo=FALSE}
+#par(mfrow=c(2,2))
+#Plot Good
+plot(y ~ jitter(x), data=g, xlim=c(0,7),yaxt='n',xaxt='n',ylab='Establishment', xlab='Initial Population (log(cell/mL))', main='Establishment in Good Environment')
+
+tick<-c(1,unique(good$Initial.Population*5))
+axis(1, at=log(tick), labels=tick)
+axis(2, at=c(0,1), labels=c('Fail', 'Establish'), hadj=0.5,padj=0)
+#plot weibull line with given parameters
+x<-seq(0,400, by=.01)
+k<- coef(goodfit)[2]
+l<- coef(goodfit)[1]
+lgy<-1-exp(-(x/l)^k)
+lines(lgy~x) 
+mtext(paste('LL =',round(logLik(goodfit)) ),1, line=-5)
+#Plot Poor
+tick2<-c(1,unique(poor$Initial*(1000/75)))
+x<-seq(0,3000, by=.1)
+plot(y ~ jitter(x), data=b, xlim=c(0,11),xaxt='n', yaxt='n',ylab='Establishment', xlab='Initial Population (log(cells/mL))', main='Experimental data in Poor Environment', col='blue')
+axis(1, at=log(tick2), labels=round(tick2))
+axis(2, at=c(0,1), labels=c('Fail', 'Establish'), hadj=0.5,padj=0)
+#plot weibull line with given parameters
+k<- coef(poorfit)[2]
+l<- coef(poorfit)[1]
+lgy<-1-exp(-(x/l)^k)
+lines(lgy~x) 
+mtext(paste('LL =',round(logLik(poorfit)) ),1, line=-5)
+
+
+#Plot Poor +Pred
+tick3<-c(1,unique(pred$Initial*(1000/75)))
+
+plot(y ~ jitter(x), data=c, xlim=c(0,11), xaxt='n',yaxt='n',ylab='Establishment', xlab='Initial Population (log(cells/mL))', main='Experimental data in Poor+Pred Environment', col='red')
+axis(1, at=log(tick3), labels=round(tick3))
+axis(2, at=c(0,1), labels=c('Fail', 'Establish'), hadj=0.5,padj=0)
+#plot weibull line with given parameters
+k<- coef(predfit)[2]
+l<- coef(predfit)[1]
+lgy<-1-exp(-(x/l)^k)
+lines(lgy~x) 
+mtext(paste('LL =',round(logLik(predfit)) ),1, line=-5)
+
+```
+
+
+
+```{r inflectionrange, echo=FALSE}
+#calculate the inflection point/range based on the mle
+inflection.range(goodfit, g)->grange
+inflection.range(poorfit, b)->prange
+inflection.range(predfit, c)->pprange
+
+```
+
+```{r overlyfit, echo=FALSE}
+ plot(NA, ylim=c(0,1), xlim=c(0,10), xaxt='n', yaxt='n',xlab='Initial Population (log(cells/mL))', ylab='Persist', main='Model Fit')
+tick3<-seq(0,10, by=1)
+axis(1, at=tick3, labels=round(exp(tick3)))
+axis(2, at=c(0,1), labels=c('Fail', 'Establish'), hadj=0.5,padj=0)
+
+#shade range of inflection point
+shade<-seq(pprange[1],pprange[2], by=0.01)
+  for(i in 1:length(shade)){
+    shade[i]->draw
+    abline(v=draw, col='lightpink')
+  }
+
+abline(v=pprange[1], lty=3, col='lightpink', lwd=2)
+abline(v=pprange[2], lty=3, col='lightpink', lwd=2)
+
+shade<-seq(prange[1],prange[2], by=0.01)
+  for(i in 1:length(shade)){
+    shade[i]->draw
+    abline(v=draw, col='lightblue1')
+  }
+abline(v=prange[1], lty=3, col='lightblue',lwd=2)
+abline(v=prange[2], lty=3, col='lightblue',lwd=2)
+
+shade<-seq(grange[1],grange[2], by=0.01)
+  for(i in 1:length(shade)){
+    shade[i]->draw
+    abline(v=draw, col='gray95')
+  }
+abline(v=grange[1], lty=3, col='grey', lwd=2)
+abline(v=grange[2], lty=3, col='grey', lwd=2)
+
+##Good
+#plot weibull line with given parameters
+k<- coef(goodfit)[2]
+l<- coef(goodfit)[1]
+lgy<-1-exp(-(log(x)/l)^k)
+lines(lgy~log(x)) 
+#add inflection point
+l*(((k-1)/k)^(1/k))->xi
+yi<-1-exp(-((xi)/l)^k)
+points(yi~xi, pch=19)
+
+#Poor
+#plot weibull line with given parameters
+k<- coef(poorfit)[2]
+l<- coef(poorfit)[1]
+lgy<-1-exp(-(log(x)/l)^k)
+lines(lgy~log(x), col='blue') 
+#add inflection point
+l*(((k-1)/k)^(1/k))->xi
+yi<-1-exp(-((xi)/l)^k)
+points(yi~xi, pch=19, col='blue')
+
+#Poor + Pred
+#plot weibull line with given parameters
+k<- coef(predfit)[2]
+l<- coef(predfit)[1]
+lgy<-1-exp(-(log(x)/l)^k)
+lines(lgy~log(x), col='red') 
+#add inflection point
+l*(((k-1)/k)^(1/k))->xi
+yi<-1-exp(-((xi)/l)^k)
+points(yi~xi, pch=19, col='red')
+
+#add legend
+legend('bottomright', legend=c('Good', 'Poor', 'Poor+Predation'),title='Environment', col=c(1,4,2), pch=c(19), lty=1, bty='n')
+
+box()
+
+```
