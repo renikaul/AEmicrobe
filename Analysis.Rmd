@@ -2,13 +2,16 @@
 title: "Microbial Allee Effect"
 author: "RajReni Kaul"
 date: "12/12/2014"
-output: pdf_document
+output: html_document
 ---
 
 # Methods
 ## Experiment
   Viable Vibrio fisheri cells were isolated from an exponentially growing culture using FlowCytometery. Populations were exposed to either a good environment (LBS), poor environment (minimal media), or poor environment with predation (minimal media with 133 Cafeteria/mL). The good environment populations were cultured in 200uL and initial population size increased geometrically from 1 to 2048. The other conditions were cultured in 75uL and initial population size ranged from 1 to 64 (semi-geometric increase). Populations were grown for a set period of time, after which the population was scored as "established (1)" or "fail to establish (0)" based on a minimum threshold for opitcal density or fluorescence. 
   
+  *Correction* 2/10/15
+    Realized 96 well plates also had Stabb marine media, not LBS! Now the difference between 'good' and 'poor' is glycerol concentration, 40mM vs 20mM glycerol. 
+
 ## Model Fitting
   The presence of Allee effects was tested based on Dennis, B. 2002. Allee effects in stochastic populations. Oikos 96: 389-401. Demographic stochasticity, which can produce Allee-like behavior, can be differentiated from true Allee dynamics when examining the probability of extinction/establishment as a function of population size.  Populations subject to Allee effects have very different  probabilities of extinction above and below the lower critial size. This dramatic change in rates results in an inflection point at the critical population size. Populations subject to demographic noise will lack this inflection point in the probability of extinction. The presence of an inflection point can then surve as a test for the presence of an Allee effect. We used the Weibull function that will be sigmoidal (ie. have an inflection point) when $k>1$. 
 $$
@@ -69,19 +72,19 @@ library(gplots)
 #constants
 thres<-0.25 #OD values required to call population established
 ```
-#Data Prep
+# Data Prep
  Need to currate data files: 
  -type
  -plate
 
 ## Good Environment
 The data for the good environment was collected at a different time/trials. Three trials of 96well plates were run for the good environment. The following code chunk starts with the OD by time then:
-1. Combines all 3 trials
-2. Adds treatment information for each well
-3. Determines the time it took each well to reach the minimum detection limit
-4. Determine the max value or population size for each well
-5. Key populations as established/not based on max value
-6. Calculate summary stats for the populations that established
+1.  Combines all 3 trials
+2.  Adds treatment information for each well
+3.  Determines the time it took each well to reach the minimum detection limit
+4.  Determine the max value or population size for each well
+5.  Key populations as established/not based on max value
+6.  Calculate summary stats for the populations that established
 
 The output of this process is saved in 'demo.sum'. The populations were grouped by treatment to calculate summary statistics, this is saved in 'demo.stat'. 
 ```{r goodenvironment}
@@ -122,7 +125,7 @@ demo.group<- group_by(demo.sum, Initial)
 demo.stat<-summarise(demo.group, p.N=length(persist), p.ave=mean(persist), p.sd=sd(persist), est.N=length.na(hour), est.ave=mean.na(hour), est.sd=sd.na(hour), y.N=length(new.yield[which(new.yield>0)]), y.ave=mean(new.yield[which(new.yield>0)]), y.sd=sd(new.yield[which(new.yield>0)]))
 
 demo.stat[which(demo.stat$Initial>0),]->demo.stat #remove negative control wells
-(demo.stat$Initial/200)*75->adj.initial #density of initial population (cells/mL)
+(demo.stat$Initial/200)*1000->adj.initial #density of initial population (cells/mL)
 cbind(adj.initial, demo.stat)->demo.stat
 
 #demo.sum has info by well
@@ -181,11 +184,21 @@ cbind(adj.initial, stat)->stat
 #stat has summary statistics by treatment
 ```
 
-```{r}
-plotCI(y=demo.stat$y.ave, x=log(demo.stat$adj.initial), uiw=demo.stat$y.sd, main='yield', ylim=c(0,1), xlim=c(0,8), gap=0)
-plotCI(y=stat$y.ave, x=log(stat$adj.initial), uiw=stat$y.sd, add=TRUE, col=ifelse(stat$Cafeteria==0,'blue','red'), gap=0)
-```
 # Results
+
+```{r}
+plotCI(y=demo.stat$y.ave, x=log(demo.stat$adj.initial), uiw=demo.stat$y.sd, main='yield', ylim=c(0,1), xlim=c(0,8), gap=0, col="#a6cee3" )
+plotCI(y=stat$y.ave, x=log(stat$adj.initial), uiw=stat$y.sd, add=TRUE, col=ifelse(stat$Cafeteria==0,'#1f78b4','#b2bf8a'), gap=0)
+
+plotCI(y=demo.stat$est.ave, x=log(demo.stat$adj.initial), uiw=demo.stat$est.sd, main='time to establishment', xlim=c(0,8), gap=0, ylim=c(0,400))
+plotCI(y=stat$est.ave, x=log(stat$adj.initial), uiw=stat$est.sd, add=TRUE, col=ifelse(stat$Cafeteria==0,'blue','red'), gap=0)
+
+demo.stat
+
+stat
+```
+
+
   An Allee effect was detected in ALL treatments. The strength of the Allee effect, as measured by the inflection point or $\lambda$, increased with decreasing environmental quality. 
   
 ```{r dataprep, echo=FALSE}
@@ -207,9 +220,6 @@ y <- demo.sum$persist
 #Prep data for mle2
 g<-list(x=x,y=y)
 
-
-
-
 #n=12 384 well plate
 #read.csv('data/finalsum.csv', header=T)->d
 #Pull out controls
@@ -225,10 +235,10 @@ d[which(d$Initial>0),]->d
  d[which(d$Cafeteria==0),]->poor
 #pull out data
 #x <- log(poor$Initial+1)
-x <- log(poor$Initial*(1000/75)) #Initial population in 75uL *(1000/75)= cells/mL
-y <- poor$persist
+x1 <- log(poor$Initial*(1000/75)) #Initial population in 75uL *(1000/75)= cells/mL
+y1 <- poor$persist
 #Prep data for mle2
-b<-list(x=x,y=y)
+b<-list(x=x1,y=y1)
 
 #Poor with Predation
 d[which(d$Cafeteria==10),]->pred
@@ -250,6 +260,9 @@ goodfit<-mle.estimate(data=g)
 poorfit<-mle.estimate(data=b)
 predfit<-mle.estimate(data=c)
 
+goodfit
+poorfit
+predfit
 #plot CI around point estimates
 #con.plot=function(window,res,data,model,n,title, ring=1, surface=FALSE, same=TRUE)
 con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=g, model=goodfit, title='', same=FALSE, ring='black',ylim=c(0,12),xlim=c(0,10))
@@ -277,7 +290,7 @@ text(x=4.5, y=1.25, labels="Sigmoid Present")
 #Plot Good
 plot(y ~ jitter(x), data=g, xlim=c(0,7),yaxt='n',xaxt='n',ylab='Establishment', xlab='Initial Population (log(cell/mL))', main='Establishment in Good Environment')
 
-tick<-c(1,unique(good$Initial.Population*5))
+tick<-c(1,unique(demo.sum$Initial*5))
 axis(1, at=log(tick), labels=tick)
 axis(2, at=c(0,1), labels=c('Fail', 'Establish'), hadj=0.5,padj=0)
 #plot weibull line with given parameters
