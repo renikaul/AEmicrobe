@@ -1,0 +1,359 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[american]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{fancyvrb}
+\usepackage{pdfpages}
+\usepackage{xcolor,colortbl}
+
+\setlength{\parskip}{.1in}  
+\setlength{\parindent}{0.0in}  
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{1}
+
+\newcommand{\code}[1]{\texttt{#1}}
+%opening
+\title{Allee Effects in Microbial Populations}
+\author{RajReni Kaul, Andrew M. Kramer, Fred Dobbs and John M. Drake}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\begin{abstract}
+Italics (non-scientific) are notes to self. Bold sentences are paragraph purpose. 
+\end{abstract}
+
+\section{Introduction}
+
+\textbf{Allee effects or negative density dependence can have unexpected impact on population survival}
+
+Allee effects (AE), also known as negative density dependence, is characterized by reduced or negative growth rates at lower population density. This density dependence creates a threshold density where the rate of the probability of extinction changes, the rate being higher below this critical density (Dennis). This phenomenon is particularly important for exploited and vulnerable populations. Populations undergoing conservation efforts past an unknown critical thresholds are challenging to restore to to pristine sizes. On the other hand, invasive or nuisance species subject to AE maybe easier to manage since a non-zero density would non-linearly increase the chances of extirpation. 
+
+\textbf{Theoretical studies have provided the framework to study AE, but not that many experimental studies have been done. Even fewer studies have been done with microbes. }
+
+Many mechanisms that lead to Allee effects (AE) have been explored in theoretical investigations (Cite). Some of these mechanisms have been observed in natural studies (cite examples), or experimental manipulations of macroorganisms (cite examples). However, only study that explored the possibility of an AE in microbes used an engineered yeast, designed to have an AE (Gore). \textit{Strain with a deletion grown in a non-standard carbon source} 
+
+\textbf{We looked for AE caused by 2 different mechanisms in microbial populations }
+
+In the current study,  we attempted to detect the presence of an intrinsic and predator-induced AE using the isolate \textit{Vibrio fisheri} , \textit{ES114} containing a plasmid with constitutively expressed green florescence protein (GFP) and kanamycin-resistance cassettes(pVSV102).  
+
+\section{Methods}
+\textit{Experiment}
+
+The presence of demographic or predator induced Allee effects were examined using a partial factorial design. Populations of \textit{V. fisheri} were inoculated in high and low resource environments, a portion of the populations with low resources were also exposed to predation by the eukaryotic generalist bacterivore \textit{C. roenbergensis}. Populations of \textit{V. fisheri} with high resources were not exposed to predation due to co-culturing limitations. All populations were grown in mineral salts medium (0.4mM NaPO$_{4}$ (pH 7.5), 50mM Tris (pH 8.0), 11mM NH$_{4}$Cl, 10uM  FeSO$_{4}\cdot$7H$_{2}$O, 55mM MgSO$_{4}\cdot$7H$_{2}$O, 11mM KCl, 0.3M NaCl, 11mM CaCl$_{2}\cdot$2H$_{2}$O) containing 20 mM glycerol under kanamycin selection (100mg/mL). The high resource environment had an additional 20mM glycerol. 
+
+Individual cells of \textit{Vf} and \textit{Cr} were selected to inoculate experimental populations by fluorescence flow cytometry. Exponential phase cultures of \textit{Vf} and \textit{Cr} were stained with 3uM propidium iodide (PI),a membrane impermeable nucleic acid dye, for 15 minutes prior to sorting into a well pre-filled with media of a microtiter plate. This method allowed populations to be accurately initiated with geometrically increasing number of viable cells (1 to 64 cells in high resource and 1 to 2048 cells in low resource). The high resource experiment was conducted in 3 replicate 96 well microplates with a final volume of 200uL. The low resource experiment was done in a 384 well microplate with a final volume of 75uL. The volume difference created non-identical but overlapping density treatments of 5, 10, 20, 40, 80, 160 and 320 cells/mL for the high resource treatment (n=36) and  13.3, 26.7, 53.3, 106.7, 213.3, 426.7, 853.3, 1706.7, 3413.3, 6826.7, 13653.3, and 27306.7 cells/mL for the low resource treatment (n=24). A predator-induced AE was tested by adding 10 \textit{C. roenbergensis} per population to half of the low resource treatment replicates.  
+
+Immediately following well inoculation the microtiter plates were sealed with optical film to avoid any contamination. Plates were simultaneously incubated at 28C and monitored for growth based by optical density (OD$_{620}$) and GFP fluorescence (485/528, sensitivity=XX) in a Synergy H1 plate reader (Biotek). Populations were allowed to grow for 72 hours before assessing population establishment. Established populations, scored as 1, were defined as having an increase of at least 0.25 OD$_{620}$ or 100 relative fluorescence units (RFUs) from the initial reading.  \textit{V. fisheri} strain ES114  and \textit{C. roenbergensis} were kindly supplied by Eric Stabb(UGA) and Alexander Bochdansky(), respectively.  
+	
+\textit{Model Fitting}
+
+The presence of an AE can be separated from stochastic noise by examining the probability of establishment based on population density. AE will be characterized by a dramatic change in the rate of change, or an inflection point in a fitted curve. This inflection point is the minimum population density needed to escape the negative density dependent mechanism causing the AE. Since some low density populations will go extinct due to stochastic noise, we needed a method that would allow but not mandate a sigmoidal curve. The 2-parameter Weibull function may take on many shapes and is sigmoidal when the shape parameter is greater than one ($k>1$). Using this threshold as a statistical test for the presence of an AE, we simultaneously fit the shape ($k$) and scale ($\lambda$) parameters using MLE based on a binomial distribution of establishment against natural log transformed density. Confidence intervals around the point estimates assume a normal distribution. 
+
+\begin{figure}
+\[ y = 1-e^{(\frac{-x}{\lambda})^{k}} \]
+\caption{\textbf{Expression used to detect AE} The probability of persistance, $y$,is a function of the population density, $x$. An estimate of $k>1$ indicates the presence of an AE. \textit{Need to determine a way to imbed equation without calling it a figure.}}
+\end{figure}
+
+\section{Results}
+
+Roughly 90\% of the \textit{V f} culture met the viable cell criteria for the flow cytometer. The yield or carrying capacity of the populations were not altered based on the initial population density within the treatments. The shape parameter,$k$, for all 3 treatments is estimated to be greater than 1 resulting in a sigmoidal relationship. The scale parameter,$\lambda$, for the three environments was also greater than 0 indicating a biologically meanful critical threshold required for a population to escape an AE (Fig.1) 
+   
+\section{Discussion}
+
+\textbf{Findings}
+
+This work adds to the growing knowledge of AE impact on natural populations. \textit{V f} are subject to both intrinsic and predator incuded Allee effects. The strength of the effect, represented by the critical density, increases with decreasing environmental quality (Fig. 2). We would expect even more pronounced effects in natural populations since dissolved organic carbon (DOC) of the ocean's are three orders of magnitude lower \textit{(mM in experiment vs uM in Ocean)} (Cite Pedler et al 2014  10.1073/pnas.1401887111).  Understanding this relationship under climate change mediated DOC shifts in marine systems will increase our understanding of heterotrophic microbes in the global carbon cycle \textit{Will this increase or decrease sink strength of aquatic systems?}. 
+	
+\textbf{Objections}
+
+Our methods did not allow us to differential between extremely suppressed growth and extinction, but both are an outcome of an AE so we grouped both possibilities into 'failure to establish'. 
+This study only detected the presence of an AE, but does not provide any insight into the mechanisms leading to the critical density. However, it is not unreasonable for an intrinsic AE to be detected in \textit{V f} given the importance of quorum sensing in forming symbiosis with the Hawaiian bobtail squid \textit{Euprymna scolopes} (Cite).
+  
+\textbf{Call to integrate microbial and ecological knowledge to understand microbial populations}
+
+Our conceptual understanding of mechanisms controlling microbial populations is much more complex than the original \textit{`Everything is everywhere`} paradigm (Baas Becking, 1934). Microbial ecology has shown that many mechanisms that control macroorganisms, also influence microorganisms (Reno et al 2009, Hellweger et al 2014, as reviewed in XX). This study continues the trend by presenting an example of negative density dependence of a microbial population in a rigorous theoretical framework. Work of this nature could be used to further develop long standing microbial concepts such as quorum protection (Macreadie 2015) and minimum inhibitory concentration (CITE). Furthermore, this work integrates microbial and ecological knowledge to create a highly manipulatable experimental system allowing gains in both fields.  
+
+
+\section{References- still working on bibtex}
+
+\section{Figures}
+<<echo=FALSE, warning=FALSE, message=FALSE>>=
+#Require Scripts
+source('script/pr.reformat.R') #converts H1 data into easy to use formate
+source('script/mlefunctions2.R') #MLE fitting functions
+source('script/simfunctions.R') #simulates data with known AE strength
+source('script/preprocessing.R') #functions that summarize data and add experimental treatment info.
+#libraries not in scripts
+library(reshape2)
+library(gplots)
+
+#constants
+thres<-0.25 #OD values required to call population established
+@
+
+<<goodenvironment, echo=FALSE>>=
+######################
+#Reshape data files##
+#####################
+
+#Demographic data is split across 3 96 well plates
+#Demographic trial data
+read.csv('data/demo_pl1.csv',header=T)->d1
+pr.reformat('data/demo_pl2.txt')->d2
+pr.reformat('data/demo_pl3.txt')-> d3
+
+###Need to remove uness columns
+#add sampling info to data not recorded by plate reader
+plate<-c(1)
+cbind(plate,d1)->d1
+plate<-c(2)
+cbind(plate,d2)->d2
+plate<-c(3)
+cbind(plate, d3)->d3
+
+rbind(d1[,-c(3,4,5)],d2[,-c(3,4)],d3[,-c(3,4)])->data
+#reshape data
+#md<-melt(d, id=c("plate","Measurment"), variable.name="Well", value.name="Growth")
+
+#read in plate maps
+read.csv('data/demoplatemap.csv', header=T)-> p3
+
+#calculate summary stat
+
+ttothreshold(data=data,cat.type=data$plate,n.cat=3,thres=0.25, convert=(5/60))->demo.sum
+#add experimental treatment info to each population
+inner_join(demo.sum,p3, by='Well')->demo.sum
+#prep data by grouping in experimental treatments of "Initial" population size
+demo.group<- group_by(demo.sum, Initial)
+
+demo.stat<-summarise(demo.group, p.N=length(persist), p.ave=mean(persist), p.sd=sd(persist), est.N=length.na(hour), est.ave=mean.na(hour), est.sd=sd.na(hour), y.N=length(new.yield[which(new.yield>0)]), y.ave=mean(new.yield[which(new.yield>0)]), y.sd=sd(new.yield[which(new.yield>0)]))
+
+demo.stat[which(demo.stat$Initial>0),]->demo.stat #remove negative control wells
+(demo.stat$Initial/200)*1000->adj.initial #density of initial population (cells/mL)
+cbind(adj.initial, demo.stat)->demo.stat
+
+#demo.sum has info by well
+#demo.stat has summary statistics by treatment
+@
+
+<<poorpredenvironment, echo=FALSE>>=
+#Trial 15 full data
+pr.reformat('data/11-18-13-T15_ALL.txt')->T15raw #this is a big file, takes a few seconds to load
+T15raw[,-c(1:3)]->T15 #remove non-informative col
+Type=c(1:4) #as in read type
+Time<-sort(rep(c(1:381),4)) #time in read number
+
+cbind(Time,Type,T15)->T15
+#reshape data
+mT15<-melt(T15, id=c("Type", "Time"), variable.name="Well", value.name="Growth")
+
+#read in plate maps
+read.csv('data/platemap384.csv', header=T)-> p1
+
+#Two data types
+#T15
+#mT15
+#Only interested in OD data, so pull out type 1 from T15
+T15[which(T15$Type==1),]->tempdata
+ttothreshold(data=tempdata,cat.type=tempdata$Type,n.cat=1,thres=0.25, convert=.25)->sum
+#add experimental treatment info to well
+inner_join(sum,p1, by='Well')->final.sum
+#group by experimental treatments
+grouped<- group_by(final.sum,  Initial, Cafeteria)
+
+stat<-summarise(grouped, p.N=length(persist), p.ave=mean(persist), p.sd=sd(persist), p.total=sum(persist), y.N=length(new.yield[which(new.yield>0)]), y.ave=mean(new.yield[which(new.yield>0)]), y.sd=sd(new.yield[which(new.yield>0)]), est.N=length.na(est), est.ave=mean.na(est), est.sd=sd.na(est))
+
+stat[order(stat$Cafeteria),]->stat
+as.data.frame(stat)->stat
+
+stat[which(stat$Initial>0),]->stat #remove negative control wells
+(stat$Initial/75)*1000->adj.initial #density of initial population (cells/mL)
+cbind(adj.initial, stat)->stat
+
+
+#final.sum has info by well
+#stat has summary statistics by treatment
+@
+
+<<dataprep, echo=FALSE>>=
+# #n=36 in good environment
+# read.csv('data/All_data.csv',header=T)->good
+# #remove controls
+# good[which(good$Initial.Population>0),]->good
+# 
+# #pull out data, convert to density (cells/mL)
+# x <- log(good$Initial.Population*5) #Initial population in 200uL * 5 = cells/mL 
+# y <- good$Persist
+# #Prep data for mle2
+# g<-list(x=x,y=y)
+
+demo.sum[which(demo.sum$Initial>0),]->demo.sum
+#pull out data, convert to density (cells/mL)
+x <- log(demo.sum$Initial*5) #Initial population in 200uL * 5 = cells/mL 
+y <- demo.sum$persist
+#Prep data for mle2
+g<-list(x=x,y=y)
+
+#n=12 384 well plate
+#read.csv('data/finalsum.csv', header=T)->d
+#Pull out controls
+#d[which(d$Initial>0),]->d
+#d[which(d$Type==1),]->d
+#d[order(d$Initial),]->d
+
+
+final.sum->d
+#Pull out controls
+d[which(d$Initial>0),]->d
+#Poor Environment
+ d[which(d$Cafeteria==0),]->poor
+#pull out data
+#x <- log(poor$Initial+1)
+x1 <- log(poor$Initial*(1000/75)) #Initial population in 75uL *(1000/75)= cells/mL
+y1 <- poor$persist
+#Prep data for mle2
+b<-list(x=x1,y=y1)
+
+#Poor with Predation
+d[which(d$Cafeteria==10),]->pred
+#pull out data
+#x<-log(pred$Initial+1)
+x <- log(pred$Initial*(1000/75)) #Initial population in 75uL *(1000/75)= cells/mL
+y <- pred$persist
+#Prep data for mle2
+c<-list(x=x,y=y)
+@
+
+
+<< mle, echo=FALSE>>=
+#calculate MLE surface
+goodfit<-mle.estimate(data=g)
+poorfit<-mle.estimate(data=b)
+predfit<-mle.estimate(data=c)
+
+@
+
+\begin{figure}[!h]
+\begin{center}
+<<fig1, fig=TRUE , width=7 , height=5, echo=FALSE >>=
+#plot CI around point estimates
+#con.plot=function(window,res,data,model,n,title, ring=1, surface=FALSE, same=TRUE)
+con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=g, model=goodfit, title='', same=FALSE, ring='black',ylim=c(0,12),xlim=c(0,10))
+con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=b, model=poorfit, title='', same=TRUE, ring='blue')
+con.plot(window=c(0,10,0,13), res=c(500,500), n=10, data=c, model=predfit, title='', same=TRUE, ring='red')
+mtext('k',2, line=3)
+mtext(expression(paste( lambda, " ( log (cells/mL) )")),1, line=3)
+
+#mtext('Parameter Estimate', 3, line=1)
+#add points
+points(coef(goodfit)[2]~coef(goodfit)[1], pch=19, cex=0.5)
+points(coef(poorfit)[2]~coef(poorfit)[1], pch=19, cex=0.5, col='blue')
+points(coef(predfit)[2]~coef(predfit)[1], pch=19, cex=0.5, col='red')
+#add legend
+legend('topright', legend=c('Good', 'Poor', 'Poor+Predation'),title='Environment', col=c(1,4,2), pch=c(19), lty=1, bty='n')
+#add hypothesis test
+abline(h=1, lty=2)
+abline(v=0)
+text(x=.04, y=6, labels="Critical \n Population = 1", srt=90)
+text(x=4.5, y=1.25, labels="Sigmoid Present")
+@
+\end{center}
+\caption{\textbf{Parameter estimates suggest Allee Effect present in all treatments.} The $k$ parameter is used to test the presence of an AE. Values greater than 1 indicate a sigmoidal relationship between density and probability of establishment. The shape parameter, $\lambda$, is the upper bound on the inflection point or critical density required to escape the AE. The point parameter estimates are presented with 95\% confidence intervals.  \textit{Include explanation of treatments?}
+}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+<<fig2, fig=TRUE , width=7 , height=5, echo=FALSE>>=
+#inflectionrange
+#calculate the inflection point/range based on the mle
+inflection.range(goodfit, g)->grange
+inflection.range(poorfit, b)->prange
+inflection.range(predfit, c)->pprange
+x<-seq(0,2000, by=0.05)
+plot(NA, ylim=c(0,1), xlim=c(0,8), xaxt='n', yaxt='n',xlab='Initial Population (log(cells/mL))', ylab='Persist')
+tick3<-c(1,10,100,1000)
+axis(1, at=log(tick3), labels=tick3)
+axis(2, at=c(0,1), labels=c('Fail', 'Establish'), hadj=0.5,padj=0)
+
+#shade range of inflection point
+shade<-seq(pprange[1],pprange[2], by=0.01)
+  for(i in 1:length(shade)){
+    shade[i]->draw
+    abline(v=draw, col='lightpink')
+  }
+
+abline(v=pprange[1], lty=3, col='lightpink', lwd=2)
+abline(v=pprange[2], lty=3, col='lightpink', lwd=2)
+
+shade<-seq(prange[1],prange[2], by=0.01)
+  for(i in 1:length(shade)){
+    shade[i]->draw
+    abline(v=draw, col='lightblue1')
+  }
+abline(v=prange[1], lty=3, col='lightblue',lwd=2)
+abline(v=prange[2], lty=3, col='lightblue',lwd=2)
+
+shade<-seq(grange[1],grange[2], by=0.01)
+  for(i in 1:length(shade)){
+    shade[i]->draw
+    abline(v=draw, col='gray95')
+  }
+abline(v=grange[1], lty=3, col='grey', lwd=2)
+abline(v=grange[2], lty=3, col='grey', lwd=2)
+
+##Good
+#plot weibull line with given parameters
+k<- coef(goodfit)[2]
+l<- coef(goodfit)[1]
+lgy<-1-exp(-(log(x)/l)^k)
+lines(lgy~log(x)) 
+#add inflection point
+l*(((k-1)/k)^(1/k))->xi
+yi<-1-exp(-((xi)/l)^k)
+points(yi~xi, pch=19)
+
+#Poor
+#plot weibull line with given parameters
+k<- coef(poorfit)[2]
+l<- coef(poorfit)[1]
+lgy<-1-exp(-(log(x)/l)^k)
+lines(lgy~log(x), col='blue') 
+#add inflection point
+l*(((k-1)/k)^(1/k))->xi
+yi<-1-exp(-((xi)/l)^k)
+points(yi~xi, pch=19, col='blue')
+
+#Poor + Pred
+#plot weibull line with given parameters
+k<- coef(predfit)[2]
+l<- coef(predfit)[1]
+lgy<-1-exp(-(log(x)/l)^k)
+lines(lgy~log(x), col='red') 
+#add inflection point
+l*(((k-1)/k)^(1/k))->xi
+yi<-1-exp(-((xi)/l)^k)
+points(yi~xi, pch=19, col='red')
+
+#add legend
+legend('bottomright', legend=c('Good', 'Poor', 'Poor+Predation'),title='Environment', col=c(1,4,2), pch=c(19), lty=1, bty='n')
+
+box()
+
+@
+\end{center}
+\caption{\textbf{Weibull curve based on estimated parameters.} Point is based on parameter point estimate, the shaded area is based on the 95\% confidence interval. The values are: X-X for the high resource (40mM glycerol), Y-Y low resource (20mM glycerol) and Z-Z low resource with predation (20mM glycerol plus 134 Cafeteria/mL)  
+}
+\end{figure}
+
+\end{document}
