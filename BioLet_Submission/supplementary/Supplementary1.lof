@@ -1,0 +1,10 @@
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=\textwidth]{pointwise.png}
+\end{center}
+\caption{Sensitivity Analysis. The point estimate and 95\% confidence interval were estimated from the full dataset ($n$ observations in bold). The analysis was repeated with $n-1$ observations until each case had individually been omitted (pale color). Removal of a single observation does not impact Allee effect detection indicating the robustness of conclusion. }
+
+
+
+\end{figure}

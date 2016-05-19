@@ -1,0 +1,145 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 JAN 2016 17:24
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**MS_supp.bib
+(./MS_supp.bib
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+./MS_supp.bib:8: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 @
+     article{veit_dispersal_1996,
+? 
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+./MS_supp.bib:8: Missing $ inserted.
+<inserted text> 
+                $
+l.8 @article{veit_
+                  dispersal_1996,
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+./MS_supp.bib:24: Extra }, or forgotten $.
+l.24 }
+      
+? 
+./MS_supp.bib:25: Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+? 
+Missing character: There is no Â in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Overfull \hbox (164.47147pt too wide) in paragraph at lines 8--25
+[]$[]\OML/cmm/m/it/10 ispersal[]\OT1/cmr/m/n/10 996\OML/cmm/m/it/10 ; jstor[]rt
+icletype \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (113.97595pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; title \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (559.81816pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; author \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (205.29115pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; journal \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (118.79486pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; jstor[]ssuetitle \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.39471pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; volume \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.24432pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; number \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (107.07605pt too wide) in paragraph at lines 8--25
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; jstor[]ormatteddate \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (85.36461pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; pages \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (97.78458pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; ISSN \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (90.89014pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; abstract \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (4089.61984pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; language \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (71.15695pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; year \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.56789pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; publisher \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (373.14009pt too wide) in paragraph at lines 8--25
+[]\OML/cmm/m/it/10 ; copyright \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (179.8891pt too wide) in paragraph at lines 8--25
+[]$ 
+ []
+
+
+./MS_supp.bib:27: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 @
+      article{steels_sorbic_2000,
+? 
+Missing character:

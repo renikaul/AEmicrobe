@@ -1,0 +1,294 @@
+\documentclass[10pt]{article}
+\usepackage[paper=a4paper, margin=0.75in]{geometry}
+
+%Required packages
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{setspace}
+\usepackage{lineno}
+\setcounter{secnumdepth}{-1} 
+
+
+\usepackage[american]{babel}
+\usepackage{authblk}
+\usepackage{figcaps}
+
+
+%opening
+\title{Experimental demonstration of an Allee effect in microbial populations}
+\author[1*]{RajReni B. Kaul}
+\author[1]{Andrew M. Kramer}
+\author[2]{Fred C. Dobbs}
+\author[1]{John M. Drake}
+
+\affil[1]{Odum School of Ecology, University of Georgia, Athens, GA}
+\affil[2]{Department of Ocean, Earth and Atmospheric Sciences, Old Dominion University, Norfolk, VA}
+\affil[*]{\textit{corresponding author:} reni@uga.edu}
+
+%\usepackage{Sweave}
+\begin{document}
+%\input{Kauletal_AE-concordance}
+
+
+\date{}
+
+\linenumbers
+\doublespacing
+\maketitle
+%\textit{corresponding author}: RajReni B. Kaul reni@uga.edu
+
+
+\newpage
+\begin{abstract}
+Microbial populations can be dispersal limited. However, microorganisms that successfully disperse into physiologically ideal environments are not guaranteed to establish. This observation contradicts the Bass-Becking tenet: \textit{`Everything is everywhere, but the environment selects'}. Allee effects, which manifest in the relationship between initial population density and probability of establishment, could explain this observation. Here, we experimentally demonstrate that small populations of \textit{Vibrio fischeri} are subject to an intrinsic demographic Allee effect. Populations subjected to predation by the bacterivore \textit{Cafeteria roenbergensis} display both intrinsic and extrinsic demographic Allee effects. The estimated critical threshold required to escape positive density dependence is around 5, 20, or 90 $cells~mL^{-1}$ under conditions of high/low carbon resources, or low with predation, respectively. This work builds on the foundations of modern microbial ecology, demonstrating that mechanisms controlling macroorganisms apply to microorganisms, and provides a statistical method to detect Allee effects in data.
+
+%\textit{keywords (up to 6): Allee effect, microcosm, positive density-dependence }
+
+\end{abstract}
+
+\section{Introduction}
+
+The molecular renaissance and technological advances in single cell manipulations have transformed microbiology. Particularly, molecular techniques have allowed investigation  of previously intractable questions leading to a conceptual departure from the first clause of Bass-Becking's (BB) \textit{`Everything is everywhere...'} \cite{baas_becking_geobiologie_1934}; multiple studies have shown that microorganisms may be dispersal limited \cite{martiny_microbial_2006}. In contrast, few studies have examined the second clause \textit{`...but the environment selects'} \cite{kraemer_patterns_2015}. Updated, BB implies that a population will establish as long as a cell can disperse to a physiologically favorable environment. A corollary is the laboratory dogma that microbial contamination may result from the introduction of a single cell. Microbial systems have long been used to describe the consequences of competition and predator-prey dynamics observed in metazoan populations \cite{gause_influence_1934}. Since density-dependent mechanisms limit colonization in metazoans (as reviewed by \cite{taylor_allee_2005}),  establishment for microorganisms may be less straightforward than assumed.
+
+One such density-dependent phenomenon is the Allee effect. An Allee effect (positive density dependence) is characterized by reduced per capita growth rate at small populations \cite{allee_studies_1932} compared with large ones, and has been observed in Mollusca, Arthropoda and Chordata (as reviewed in \cite{kramer_evidence_2009}).  A strong Allee effect occurs when the per capita growth rate is negative for some small population size, which gives rise to a critical density \cite{taylor_allee_2005}. This critical density can be detected in the relationship between a population's probability of establishment and its initial size (see \cite{dennis_allee_2002}). A strong Allee effect induces a sigmoidal relationship  with an inflection point at the threshold \cite{dennis_allee_2002}.  In contrast, for populations  without a strong Allee effect, the probability of establishment will be a concave function of initial density due to demographic stochasticity. Previously, Allee effects have been observed in experimental and natural populations of metazoans, with important implications for the management of vulnerable or invasive populations \cite{gascoigne_allee_2004, kramer_experimental_2010}. While microbes have been engineered to display an Allee effect \cite{dai_generic_2012, smith_programmed_2014}, this is the first study to explore their existence in an environmentally isolated microorganism. 
+
+Here we report on a combined theoretical/empirical study to detect intrinsic and extrinsic demographic Allee effects in experimental populations of a marine bacterium (\textit{Vibrio fischeri}, strain \textit{ES114 pVSV102}; \cite{dunn_new_2006}). Populations with an intrinsic demographic Allee effect have a lower per capita growth rate at low densities when compared to higher population densities. In contrast, an extrinsic demographic Allee effect results from higher per capita predation risk at low prey densities. In our experiments, \textit{V. fischeri} populations were propagated from a range of inoculum sizes, a subset of which were also exposed to predation by \textit{Cafeteria roenbergensis}. The success or failure of establishment was  used to estimate the strength of the demographic Allee effects. This study shows that one cell may not be adequate to initiate a population, especially in nature where growth conditions, including predation, are suboptimal.
+
+
+\section{Methods}
+\textit{Experiment}
+
+The presence of a demographic Allee effect was examined using a partial $2 \times 2$ factorial design for a total of three treatments. Populations of \textit{V. fischeri} were inoculated with geometrically increasing number of viable cells in high carbon (\textit{HC}; 1 to 64 cells $n=36$ per density) and low carbon (\textit{LC}; 1 to 2048 cells $n=24$ per density) resource environments; a portion of the populations with low resources were exposed to predation (\textit{LCP}; $n=12$ per density) by \textit{C. roenbergensis}. High precision inoculum sizes were achieved by flow cytometry; cells were individually sorted into media filled well plates of a final volume of $200\mu L$ and $75\mu L$ into \textit{HC} and \textit{LC}, respectively.  Well mixed populations were incubated at $28^{\circ} \mathrm{C}$ for 96 hours before assessing population establishment ($\Delta OD_{620} \geq 0.25$; see suplement). 
+
+\textit{Model Fitting}
+
+The presence of a strong Allee effect alters the probability of establishment as a function of initial population density from an inverse exponential decay relationship as expected with demographic stochasticity to sigmoidal. The 2-parameter Weibull function can take on either of these shapes depending on the value of a single parameter, $k$. Here, a 2-parameter Weibull is defined as, $p = 1-e^{(\frac{-x}{\lambda})^{k}}$, where $p$ is the probability of establishment, $x$ is the $\ln \text{(initial population density}~(cells~mL^{-1}))$, and $\lambda$ is a scale parameter.  Interpreting this model as the probability of invasion gives rise to a binomial distribution with likelihood, $L(p)= L(y|p)= p^{y} (1-p)^{(n-y)}$, where $y$ is the total number of successes in $n$ replicates.   The shape ($k$) and scale ($\lambda$) parameters were simultaneously estimated by fitting this equation to individual trial data (see supplement).
+
+\section{Results} 
+
+The proportion of populations establishing increased and time to detection decreased non-linearly with initial density (Fig. 1), indicating reduced growth rate at low density populations (Table 1). The estimated shape parameter, $k$, was greater than $1$ for all three treatments, indicating an Allee effect in all cases (Fig. 2). The scale parameter, $\lambda$, was also greater than $0$, implying that the density needed for a positive growth rate was larger than $1~cell~mL^{-1}$ (Fig. 2). %Thus, \textit{V. fischeri} populations in this experimental system were subject to strong demographic Allee effects regardless of environment. 
+ 
+\section{Discussion}
+
+This study shows a class of phenomena  important in macroscopic systems may be relevant to single celled organisms, questioning the Bass-Becking tenet.  Specifically, \textit{V. fischeri} populations were subject to both intrinsic and extrinsic demographic Allee effects. The strength of the effect, represented by the critical density, increased with predation and decreasing carbon (Fig. 1). Possibly, even more pronounced Allee effects would be observed in natural marine populations of heterotrophic bacteria where natural concentrations of dissolved organic carbon are up to three orders of magnitude lower than in our experiments \cite{pedler_single_2014}. \textit{V. fischeri} populations subject to \textit{C. roenbergensis} predation at natural concentrations  \cite{tikhonenkov_species_2014} had a significantly higher critical threshold than populations without predation. The difference in critical threshold between the \textit{LC} and \textit{LCP} treatments is due to the additional number of individuals needed to compensate for mortality due to predation. The prey, \textit{V. fischeri} most likely overcame predation by satiation associated with a Type II/III functional response, since \textit{C. roenbergensis} stops filtering when prey fall below $2~cells~mL^{-1}$ \cite{ishigaki_grazing_2001}. 
+
+%What was the mechanism inducing Allee effects in these experiments? 
+This study detected the presence of an Allee effect, but the mechanism(s) leading to the critical density in the absence of predation are not yet understood. A candidate mechanism is quorum sensing, which detects density, and is important in \textit{V. fischeri}'s symbiosis with bobtail squid \textit{Euprymna scolopes}. Many other species have similar interactions based on population density \cite{de_kievit_bacterial_2000, gascoigne_allee_2004}. Populations that did not reach densities detectable by our methods were scored as failure to establish. We could not, therefore, differentiate between cell death and extremely slow growth (a doubling time at least an order of magnitude longer than usually observed). Cell dormancy is another possibility for bacteria and might suggest another way of reacting to reduced fitness at low density resulting in an overestimated Allee effect. 
+
+In conclusion, this work provides a mechanistic demonstration that our conceptual understanding of processes controlling microbial populations must be more complicated than the historic BB tenant \cite{baas_becking_geobiologie_1934}, with important implications for health and biotechnology application (see supplement). Microbial ecology has shown that many mechanisms controlling metazoans apply similarly to microorganisms \cite{prosser_role_2007}. This study contributes to this literature with an example of positive density dependence.
+%Furthermore, this work integrates microbial and ecological knowledge to create a highly manipulatable experimental system allowing gains in both fields.  
+
+\section{Data accessibility}
+
+The dataset and analysis has been deposited in Dryad Digital Repository (http://dx.doi.org/10.5061/dryad.q7qv2).
+
+\section{Ethics}
+No approval for animal research was required. All organisms used in this study are invertebrates, and not regulated by the Institutional Animal Care and Use Committee (IACUC).  
+
+\section{Competing interests}
+
+We declare we have no competing interests.
+
+\section{Authors' contributions}
+
+The project was conceived and designed by AMK, FD and JMD. FD conducted preliminary experiments.  RBK participated in experimental design, conducted the experiment, analyzed data and drafted manuscript. All authors participated in analyzing data and contributed to the paper. All gave final approval for publication. We agree to be accountable for all aspects of the work. 
+
+\section{Acknowledgements}
+
+Eric Stabb (UGA) and Alexander Bochdansky (ODU) kindly supplied \textit{V. fischeri} ES114 pVSV102 and \textit{C. roenbergensis} used in this work, respectively.  Julie Nelson and the CTEGD Cytometry Shared Resource Lab, UGA were essential to executing the experimental design.  J.T. Pullium aided in troubleshooting code for analysis. 
+
+\section{Funding}
+This research was funded by collaborative NSF Ecology of Infectious Disease Grants to JMD (0914347) and FCD (0914429) and the Odum School of Ecology, University of Georgia.
+
+%\section{References}
+%\bibliographystyle{vancouver}%Choose a bibliograhpic style
+%\bibliographystyle{biologyletters}
+%\bibliography{MS_all.bib}
+
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{(DOI \discretionary{}{}{}#1}\else
+  \providecommand{\doi}{(DOI \discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url{}}\fi
+
+\bibitem{baas_becking_geobiologie_1934}
+Baas~Becking L. 1934 \emph{Geobiologie of inleiding tot de milieukunde}.
+\newblock The Hague, the Netherlands: W.P. Van Stockum and Zoon (in Dutch).
+
+\bibitem{martiny_microbial_2006}
+Martiny JBH, Bohannan BJ, Brown JH, Colwell RK, Fuhrman JA, Green JL,
+  Horner-Devine MC, Kane M, Krumins JA, Kuske CR, Morin PJ, Naeem S, Øvreås
+  L, Reysenbach AL, Smith VH, Staley JT. 2006 Microbial biogeography: putting
+  microorganisms on the map.
+\newblock \emph{Nat. Rev. Microbiol.} \textbf{4}, 102--112.
+\newblock \doi{10.1038/nrmicro1341)}.
+
+\bibitem{kraemer_patterns_2015}
+Kraemer SA, Kassen R. 2015 Patterns of {Local} {Adaptation} in {Space} and
+  {Time} among {Soil} {Bacteria}.
+\newblock \emph{Am. Nat.} \textbf{185}, 317--331.
+\newblock \doi{10.1086/679585)}.
+
+\bibitem{gause_influence_1934}
+Gause G, Nastukova O, Alpatov W. 1934 The influence of biologically conditioned
+  media on the growth of a mixed population of paramecium caudatum and p.
+  aureliax.
+\newblock \emph{J. Anim. Ecol.} \textbf{3}, 222--230.
+
+\bibitem{taylor_allee_2005}
+Taylor CM, Hastings A. 2005 Allee effects in biological invasions.
+\newblock \emph{Ecol. Lett.} \textbf{8}, 895--908.
+\newblock \doi{10.1111/j.1461-0248.2005.00787.x)}.
+
+\bibitem{allee_studies_1932}
+Allee WC, Bowen ES. 1932 Studies in animal aggregations: {Mass} protection
+  against colloidal silver among goldfishes.
+\newblock \emph{J. Exp. Zool.} \textbf{61}, 185--207.
+\newblock \doi{10.1002/jez.1400610202)}.
+
+\bibitem{kramer_evidence_2009}
+Kramer AM, Dennis B, Liebhold AM, Drake JM. 2009 The evidence for {Allee}
+  effects.
+\newblock \emph{Popul. Ecol.} \textbf{51}, 341--354.
+\newblock \doi{10.1007/s10144-009-0152-6)}.
+
+\bibitem{dennis_allee_2002}
+Dennis B. 2002 Allee effects in stochastic populations.
+\newblock \emph{Oikos} \textbf{96}, 389--401.
+\newblock \doi{10.1034/j.1600-0706.2002.960301.x)}.
+
+\bibitem{gascoigne_allee_2004}
+Gascoigne JC, Lipcius RN. 2004 Allee effects driven by predation:
+  {Predation}-driven {Allee} effects.
+\newblock \emph{J. Appl. Ecol.} \textbf{41}, 801--810.
+\newblock \doi{10.1111/j.0021-8901.2004.00944.x)}.
+
+\bibitem{kramer_experimental_2010}
+Kramer AM, Drake JM. 2010 Experimental demonstration of population extinction
+  due to a predator-driven {Allee} effect.
+\newblock \emph{J. Anim. Ecol.} \textbf{79}, 633--639.
+\newblock \doi{10.1111/j.1365-2656.2009.01657.x)}.
+
+\bibitem{dai_generic_2012}
+Dai L, Vorselen D, Korolev KS, Gore J. 2012 Generic {Indicators} for {Loss} of
+  {Resilience} {Before} a {Tipping} {Point} {Leading} to {Population}
+  {Collapse}.
+\newblock \emph{Science} \textbf{336}, 1175--1177.
+\newblock \doi{10.1126/science.1219805)}.
+
+\bibitem{smith_programmed_2014}
+Smith R, Tan C, Srimani JK, Pai A, Riccione KA, Song H, You L. 2014 Programmed
+  allee effect in bacteria causes a tradeoff between population spread and
+  survival.
+\newblock \emph{Proc. Natl. Acad. Sci.} \textbf{111}, 1969--1974.
+\newblock \doi{10.1073/pnas.1315954111)}.
+
+\bibitem{dunn_new_2006}
+Dunn AK, Millikan DS, Adin DM, Bose JL, Stabb EV. 2006 New rfp- and
+  {pES}213-{Derived} {Tools} for {Analyzing} {Symbiotic} {Vibrio} fischeri
+  {Reveal} {Patterns} of {Infection} and lux {Expression} {In} {Situ}.
+\newblock \emph{Appl. Environ. Microb.} \textbf{72}, 802--810.
+\newblock \doi{10.1128/AEM.72.1.802-810.2006)}.
+
+\bibitem{pedler_single_2014}
+Pedler BE, Aluwihare LI, Azam F. 2014 Single bacterial strain capable of
+  significant contribution to carbon cycling in the surface ocean.
+\newblock \emph{Proc. Natl. Acad. Sci.} \textbf{111}, 7202--7207.
+\newblock \doi{10.1073/pnas.1401887111)}.
+
+\bibitem{tikhonenkov_species_2014}
+Tikhonenkov D. 2014 Species diversity and changes of communities of
+  heterotrophic flagellates (protista) in response to glacial melt in {King}
+  {George} {Island}, the {South} {Shetland} {Islands}, {Antarctica}.
+\newblock \emph{Antarct. Sci.} \textbf{26}, 133--144.
+\newblock \doi{10.1017/S0954102013000448)}.
+
+\bibitem{ishigaki_grazing_2001}
+Ishigaki T, Sleigh M. 2001 Grazing {Characteristics} and {Growth}
+  {Efficiencies} at {Two} {Different} {Temperatures} for {Three}
+  {Nanoflagellates} {Fed} with {Vibrio} {Bacteria} at {Three} {Different}
+  {Concentrations}.
+\newblock \emph{Microb. Ecol.} \textbf{41}, 264--271.
+\newblock \doi{10.1007/s002480000060)}.
+
+\bibitem{de_kievit_bacterial_2000}
+de~Kievit TR, Iglewski BH. 2000 Bacterial {Quorum} {Sensing} in {Pathogenic}
+  {Relationships}.
+\newblock \emph{Infect. Immun.} \textbf{68}, 4839--4849.
+\newblock \doi{10.1128/IAI.68.9.4839-4849.2000)}.
+
+\bibitem{prosser_role_2007}
+Prosser JI, Bohannan BJM, Curtis TP, Ellis RJ, Firestone MK, Freckleton RP,
+  Green JL, Green LE, Killham K, Lennon JJ, Osborn AM, Solan M, van~der Gast
+  CJ, Young JPW. 2007 The role of ecological theory in microbial ecology.
+\newblock \emph{Nat. Rev. Microbiol.} \textbf{5}, 384--392.
+\newblock \doi{10.1038/nrmicro1643)}.
+
+\end{thebibliography}
+
+
+%\section{Tables}
+
+\begin{table} 
+\caption{Experimental Summary. Each environmental treatment had populations inoculated with different densities. The average time to establishment and the yield are reported for the established populations.}
+\label{Tbl1}
+\begin{tabular}{lllll}
+Environment & \begin{tabular}[c]{@{}c@{}}Initial Density\\ $(cell~mL^{-1})$ \end{tabular} & Established (\%) & \begin{tabular}[c]{@{}c@{}}Time to\\ Establishment (Hour)\end{tabular} & Yield ($OD_{620}$)         \\ \hline
+\text{High Carbon (\textit{HC})}       & 5   & 53 (19/36)  & 31.9 $\pm$ 9.5    & 0.39 $\pm$ 0.053 \\
+         & 10   & 72 (26/36)  & 32.6 $\pm$ 8.9    & 0.38 $\pm$ 0.045 \\
+          & 20   & 97 (35/36)  & 31.6 $\pm$ 9.1    & 0.39 $\pm$ 0.052 \\
+          & 40   & 100 (36/36)  & 31.1 $\pm$ 8.8    & 0.39 $\pm$ 0.049 \\
+          & 80   & 100 (36/36)  & 30.7 $\pm$ 8.3    & 0.39 $\pm$ 0.039 \\
+          & 160   & 100 (36/36)  & 29.1 $\pm$ 7.5    & 0.39 $\pm$ 0.041 \\
+          & 320   & 100 (36/36)  & 27.3 $\pm$ 7.3    & 0.39 $\pm$ 0.036 \\ \hline
+\text{Low Carbon (\textit{LC})}    & 13.3 &    8.3 (1/12) & 95.0 $\pm$ NA    &  0.26 $\pm$ NA \\   
+          & 26.7   & 75 (9/12)  & 84.3 $\pm$ 8.326    & 0.41 $\pm$ 0.092 \\
+          & 53.3   & 100 (12/12)  & 63.2 $\pm$ 6.537    & 0.66 $\pm$ 0.018 \\
+          & 106.7   & 100 (12/12)  & 58.2 $\pm$ 6.043    & 0.65 $\pm$ 0.025 \\
+          & 213.3   & 100 (12/12)  & 52.5 $\pm$ 4.042    & 0.65 $\pm$ 0.019 \\
+          & 426.7   & 100 (12/12)  & 48 $\pm$ 3.767    & 0.65 $\pm$ 0.024 \\
+          & 853.3   & 100 (12/12)  & 35.1 $\pm$ 11.574    & 0.7 $\pm$ 0.084 \\
+          & 1706.7   & 100 (12/12)  & 37.4 $\pm$ 1.56    & 0.69 $\pm$ 0.023 \\
+          & 3413.3   & 100 (12/12)  & 35.2 $\pm$ 1.513    & 0.7 $\pm$ 0.011 \\
+          & 6826.7  & 100  (12/12) & 31.9 $\pm$ 1.165    & 0.7 $\pm$ 0.017 \\
+          & 13653.3  & 100 (12/12)  & 29.7 $\pm$ 0.829    & 0.71 $\pm$ 0.012 \\ 
+          & 27306.7  & 100 (12/12)  & 26.9 $\pm$ 0.454    & 0.7 $\pm$ 0.012 \\ \hline 
+\text{Low Carbon }
+	 & 13.3 &   8.3 (1/12) & 86.2 $\pm$ NA    &  0.37 $\pm$ NA \\   
+\text{with Predation (\textit{LCP})}  
+          & 26.7   & 8.3 (1/12)  & 94.0 $\pm$ NA    & 0.27 $\pm$ NA \\
+          & 53.3   & 50 (6/12)   & 89.7 $\pm$ 6.196    & 0.35 $\pm$ 0.108 \\
+          & 106.7   & 33 (4/12)  & 87.8 $\pm$ 3.942    & 0.38 $\pm$ 0.073 \\
+          & 213.3   & 100 (12/12)  & 69.4 $\pm$ 5.437    & 0.56 $\pm$ 0.032 \\
+          & 426.7   & 100 (12/12)  & 69.5 $\pm$ 10.154    & 0.54 $\pm$ 0.089 \\
+          & 853.3   & 100 (12/12)  & 37.6 $\pm$ 1.677    & 0.69 $\pm$ 0.011 \\
+          & 1706.7   & 100 (12/12)  & 35.7 $\pm$ 1.943    & 0.7 $\pm$ 0.034 \\
+          & 3413.3   & 100 (12/12)  & 34.8 $\pm$ 1.211    & 0.7 $\pm$ 0.014 \\
+          & 6826.7  & 100  (12/12) & 31.6 $\pm$ 1.632    & 0.73 $\pm$ 0.021 \\
+          & 13653.3  & 100  (12/12) & 27.8 $\pm$ 1.396    & 0.72 $\pm$ 0.012 \\ 
+          & 27306.7  & 100 (12/12)   & 26 $\pm$ 1.46    & 0.71 $\pm$ 0.019 \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+%\section{Figures}
+
+\begin{figure}[!h]
+%\begin{center}
+%\includegraphics{DataPacket_Extra/fig1}
+%\end{center}
+\caption{\textbf{Probability of establishment from fitted Weibull curve.} The outcome of each population per inoculum size (small points, colored by treatment) were used to calculate the average probability of establishment with a binomial confidence interval (open symbols) and fit the Weibull function (solid line). The estimated critical thresholds (closed symbols; 95\% confidence interval in shaded region) are: 4.85 (2.76 $-$ 6.67), 23.8 (19 $-$ 29.6), and 89.4 (60.2 $-$ 126) $cells~mL^{-1}$ for the \textit{HC} (40mM glycerol), \textit{LC} (20mM glycerol) and  \textit{LCP} (20mM glycerol plus $ 133 $ \textit{C. roenbergensis} $ mL^{-1} $ ), respectively. }
+\end{figure}
+
+\begin{figure}
+%\begin{center}
+%\includegraphics{DataPacket_Extra/fig2}
+%\end{center}
+\caption{\textbf{Parameter estimates suggest Allee Effect present in all treatments.} The shape parameter, $k$, tests for the presence of an Allee effect; values greater than 1 indicate a sigmoidal relationship between density and probability of establishment. The critical threshold, as determined by the inflection point, has a theoretical upper bound of $\lambda  \left( \tilde x = \lambda \sqrt[k]{\frac{k-1}{k}} \right )$. Values of $\lambda$ less than zero implies a critical threshold less than $1~cell~mL^{-1}$, which were considered biologically irrelevant. Point estimates are presented with 95\% confidence region.}
+\end{figure}
+
+\end{document}

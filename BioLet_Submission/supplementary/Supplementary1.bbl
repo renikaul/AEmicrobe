@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{(DOI \discretionary{}{}{}#1}\else
+  \providecommand{\doi}{(DOI \discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url{}}\fi
+
+\bibitem{dunn_new_2006}
+Dunn AK, Millikan DS, Adin DM, Bose JL, Stabb EV. 2006 New \textit{rfp}- and
+  {pES213}-derived tools for analyzing symbiotic \textit{Vibrio fischeri}
+  reveal patterns of infection and lux expression in situ.
+\newblock \emph{Appl. Environ. Microb.} \textbf{72}, 802--810.
+\newblock \doi{10.1128/AEM.72.1.802-810.2006)}.
+
+\bibitem{dennis_allee_2002}
+Dennis B. 2002 Allee effects in stochastic populations.
+\newblock \emph{Oikos} \textbf{96}, 389--401.
+\newblock \doi{10.1034/j.1600-0706.2002.960301.x)}.
+
+\bibitem{bbmlepack}
+Bolker B, Team RDC. 2014 \emph{bbmle: Tools for general maximum likelihood
+  estimation}.
+\newblock R package version 1.0.17.
+
+\bibitem{baseR}
+{R Core Team}. 2015 \emph{R: A Language and Environment for Statistical
+  Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem{litchman_invisible_2010}
+Litchman E. 2010 Invisible invaders: non-pathogenic invasive microbes in
+  aquatic and terrestrial ecosystems: {Invasive} microbes.
+\newblock \emph{Ecol. Lett.} \textbf{13}, 1560--1572.
+\newblock \doi{10.1111/j.1461-0248.2010.01544.x)}.
+
+\bibitem{regoes_dose-dependent_2002}
+Regoes RR, Ebert D, Bonhoeffer S. 2002 Dose-dependent infection rates of
+  parasites produce the {Allee} effect in epidemiology.
+\newblock \emph{Proc. R. S. B} \textbf{269}, 271--279.
+\newblock \doi{10.1098/rspb.2001.1816)}.
+
+\bibitem{axelrod_evolution_2006}
+Axelrod R, Axelrod DE, Pienta KJ. 2006 Evolution of cooperation among tumor
+  cells.
+\newblock \emph{Proc. Natl. Acad. Sci.} \textbf{103}, 13474--13479.
+\newblock \doi{10.1073/pnas.0606053103)}.
+
+\bibitem{korolev_turning_2014}
+Korolev KS, Xavier JB, Gore J. 2014 Turning ecology and evolution against
+  cancer.
+\newblock \emph{Nat. Rev. Cancer} \textbf{14}, 371--380.
+
+\bibitem{richards_predatory_2012}
+Richards GP, Fay JP, Dickens KA, Parent MA, Soroka DS, Boyd EF. 2012 Predatory
+  {Bacteria} as {Natural} {Modulators} of {Vibrio} parahaemolyticus and
+  {Vibrio} vulnificus in {Seawater} and {Oysters}.
+\newblock \emph{Appl. Environ. Microb.} \textbf{78}, 7455--7466.
+\newblock \doi{10.1128/AEM.01594-12)}.
+
+\bibitem{saleem_multitrophic_2014}
+Saleem M, Moe LA. 2014 Multitrophic microbial interactions for eco- and
+  agro-biotechnological processes: theory and practice.
+\newblock \emph{Trends Biotechnol.} \textbf{32}, 529--537.
+\newblock \doi{10.1016/j.tibtech.2014.08.002)}.
+
+\bibitem{macreadie_quorum_2015}
+Macreadie I. 2015 Quorum protection, growth and survival.
+\newblock \emph{Microb. Cell} \textbf{2}, 38--42.
+\newblock \doi{10.15698/mic2015.02.188)}.
+
+\bibitem{steels_sorbic_2000}
+Steels H, James SA, Roberts IN, Stratford M. 2000 Sorbic acid resistance: the
+  inoculum effect.
+\newblock \emph{Yeast} \textbf{16}, 1173--1183.
+
+\end{thebibliography}

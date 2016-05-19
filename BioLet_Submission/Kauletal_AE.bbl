@@ -1,0 +1,120 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{(DOI \discretionary{}{}{}#1}\else
+  \providecommand{\doi}{(DOI \discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url{}}\fi
+
+\bibitem{baas_becking_geobiologie_1934}
+Baas~Becking L. 1934 \emph{Geobiologie of inleiding tot de milieukunde}.
+\newblock The Hague, the Netherlands: W.P. Van Stockum \& Zoon (in Dutch).
+
+\bibitem{martiny_microbial_2006}
+Martiny JBH, Bohannan BJ, Brown JH, Colwell RK, Fuhrman JA, Green JL,
+  Horner-Devine MC, Kane M, Krumins JA, Kuske CR, Morin PJ, Naeem S, Øvreås
+  L, Reysenbach AL, Smith VH, Staley JT. 2006 Microbial biogeography: putting
+  microorganisms on the map.
+\newblock \emph{Nat. Rev. Microbiol.} \textbf{4}, 102--112.
+\newblock \doi{10.1038/nrmicro1341)}.
+
+\bibitem{kraemer_patterns_2015}
+Kraemer SA, Kassen R. 2015 Patterns of {Local} {Adaptation} in {Space} and
+  {Time} among {Soil} {Bacteria}.
+\newblock \emph{Am. Nat.} \textbf{185}, 317--331.
+\newblock \doi{10.1086/679585)}.
+
+\bibitem{gause_influence_1934}
+Gause G, Nastukova O, Alpatov W. 1934 The influence of biologically conditioned
+  media on the growth of a mixed population of paramecium caudatum and p.
+  aureliax.
+\newblock \emph{J. Anim. Ecol.} \textbf{3}, 222--230.
+
+\bibitem{taylor_allee_2005}
+Taylor CM, Hastings A. 2005 Allee effects in biological invasions.
+\newblock \emph{Ecol. Lett.} \textbf{8}, 895--908.
+\newblock \doi{10.1111/j.1461-0248.2005.00787.x)}.
+
+\bibitem{allee_studies_1932}
+Allee WC, Bowen ES. 1932 Studies in animal aggregations: {Mass} protection
+  against colloidal silver among goldfishes.
+\newblock \emph{J. Exp. Zool.} \textbf{61}, 185--207.
+\newblock \doi{10.1002/jez.1400610202)}.
+
+\bibitem{kramer_evidence_2009}
+Kramer AM, Dennis B, Liebhold AM, Drake JM. 2009 The evidence for {Allee}
+  effects.
+\newblock \emph{Popul. Ecol.} \textbf{51}, 341--354.
+\newblock \doi{10.1007/s10144-009-0152-6)}.
+
+\bibitem{dennis_allee_2002}
+Dennis B. 2002 Allee effects in stochastic populations.
+\newblock \emph{Oikos} \textbf{96}, 389--401.
+\newblock \doi{10.1034/j.1600-0706.2002.960301.x)}.
+
+\bibitem{gascoigne_allee_2004}
+Gascoigne JC, Lipcius RN. 2004 Allee effects driven by predation:
+  {Predation}-driven {Allee} effects.
+\newblock \emph{J. Appl. Ecol.} \textbf{41}, 801--810.
+\newblock \doi{10.1111/j.0021-8901.2004.00944.x)}.
+
+\bibitem{kramer_experimental_2010}
+Kramer AM, Drake JM. 2010 Experimental demonstration of population extinction
+  due to a predator-driven {Allee} effect.
+\newblock \emph{J. Anim. Ecol.} \textbf{79}, 633--639.
+\newblock \doi{10.1111/j.1365-2656.2009.01657.x)}.
+
+\bibitem{dai_generic_2012}
+Dai L, Vorselen D, Korolev KS, Gore J. 2012 Generic {Indicators} for {Loss} of
+  {Resilience} {Before} a {Tipping} {Point} {Leading} to {Population}
+  {Collapse}.
+\newblock \emph{Science} \textbf{336}, 1175--1177.
+\newblock \doi{10.1126/science.1219805)}.
+
+\bibitem{smith_programmed_2014}
+Smith R, Tan C, Srimani JK, Pai A, Riccione KA, Song H, You L. 2014 Programmed
+  allee effect in bacteria causes a tradeoff between population spread and
+  survival.
+\newblock \emph{Proc. Natl. Acad. Sci.} \textbf{111}, 1969--1974.
+\newblock \doi{10.1073/pnas.1315954111)}.
+
+\bibitem{dunn_new_2006}
+Dunn AK, Millikan DS, Adin DM, Bose JL, Stabb EV. 2006 New rfp- and
+  {pES}213-{Derived} {Tools} for {Analyzing} {Symbiotic} {Vibrio} fischeri
+  {Reveal} {Patterns} of {Infection} and lux {Expression} {In} {Situ}.
+\newblock \emph{Appl. Environ. Microb.} \textbf{72}, 802--810.
+\newblock \doi{10.1128/AEM.72.1.802-810.2006)}.
+
+\bibitem{pedler_single_2014}
+Pedler BE, Aluwihare LI, Azam F. 2014 Single bacterial strain capable of
+  significant contribution to carbon cycling in the surface ocean.
+\newblock \emph{Proc. Natl. Acad. Sci.} \textbf{111}, 7202--7207.
+\newblock \doi{10.1073/pnas.1401887111)}.
+
+\bibitem{tikhonenkov_species_2014}
+Tikhonenkov D. 2014 Species diversity and changes of communities of
+  heterotrophic flagellates (protista) in response to glacial melt in {King}
+  {George} {Island}, the {South} {Shetland} {Islands}, {Antarctica}.
+\newblock \emph{Antarct. Sci.} \textbf{26}, 133--144.
+\newblock \doi{10.1017/S0954102013000448)}.
+
+\bibitem{ishigaki_grazing_2001}
+Ishigaki T, Sleigh M. 2001 Grazing {Characteristics} and {Growth}
+  {Efficiencies} at {Two} {Different} {Temperatures} for {Three}
+  {Nanoflagellates} {Fed} with {Vibrio} {Bacteria} at {Three} {Different}
+  {Concentrations}.
+\newblock \emph{Microb. Ecol.} \textbf{41}, 264--271.
+\newblock \doi{10.1007/s002480000060)}.
+
+\bibitem{de_kievit_bacterial_2000}
+de~Kievit TR, Iglewski BH. 2000 Bacterial {Quorum} {Sensing} in {Pathogenic}
+  {Relationships}.
+\newblock \emph{Infect. Immun.} \textbf{68}, 4839--4849.
+\newblock \doi{10.1128/IAI.68.9.4839-4849.2000)}.
+
+\bibitem{prosser_role_2007}
+Prosser JI, Bohannan BJM, Curtis TP, Ellis RJ, Firestone MK, Freckleton RP,
+  Green JL, Green LE, Killham K, Lennon JJ, Osborn AM, Solan M, van~der Gast
+  CJ, Young JPW. 2007 The role of ecological theory in microbial ecology.
+\newblock \emph{Nat. Rev. Microbiol.} \textbf{5}, 384--392.
+\newblock \doi{10.1038/nrmicro1643)}.
+
+\end{thebibliography}

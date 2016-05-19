@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Kauletal_AE.aux
+The style file: biologyletters.bst
+Database file #1: MS_all.bib.bib
+You've used 18 entries,
+            2417 wiz_defined-function locations,
+            657 strings with 8457 characters,
+and the built_in function-call counts, 16877 in all, are:
+= -- 1897
+> -- 237
+< -- 0
++ -- 91
+- -- 73
+* -- 1184
+:= -- 1681
+add.period$ -- 52
+call.type$ -- 18
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 1999
+empty$ -- 1433
+format.name$ -- 88
+if$ -- 3623
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 181
+newline$ -- 94
+num.names$ -- 18
+pop$ -- 872
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 54
+stack$ -- 0
+substring$ -- 2456
+swap$ -- 411
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 125
+width$ -- 20
+write$ -- 216

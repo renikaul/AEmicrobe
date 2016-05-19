@@ -1,0 +1,16 @@
+\begin{figure}
+
+%\begin{center}
+%\includegraphics{DataPacket_Extra/fig1}
+%\end{center}
+\caption{\textbf{Probability of establishment from fitted Weibull curve.} The outcome of each population per inoculum size (small points, colored by treatment) were used to calculate the average probability of establishment with a binomial confidence interval (open symbols) and fit the Weibull function (solid line). The estimated critical thresholds (closed symbols; 95\% confidence interval in shaded region) are: 4.85 (2.76 $-$ 6.67), 23.8 (19 $-$ 29.6), and 89.4 (60.2 $-$ 126) $cells~mL^{-1}$ for the \textit{HC} (40mM glycerol), \textit{LC} (20mM glycerol) and  \textit{LCP} (20mM glycerol plus $ 133 $ \textit{C. roenbergensis} $ mL^{-1} $ ), respectively. }
+
+\end{figure}
+\begin{figure}
+
+%\begin{center}
+%\includegraphics{DataPacket_Extra/fig2}
+%\end{center}
+\caption{\textbf{Parameter estimates suggest Allee Effect present in all treatments.} The shape parameter, $k$, tests for the presence of an Allee effect; values greater than 1 indicate a sigmoidal relationship between density and probability of establishment. The critical threshold, as determined by the inflection point, has a theoretical upper bound of $\lambda  \left( \tilde x = \lambda \sqrt[k]{\frac{k-1}{k}} \right )$. Values of $\lambda$ less than zero implies a critical threshold less than $1~cell~mL^{-1}$, which were considered biologically irrelevant. Point estimates are presented with 95\% confidence region.}
+
+\end{figure}
