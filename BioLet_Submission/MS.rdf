@@ -1,0 +1,2151 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="http://www.sciencemag.org/cgi/doi/10.1126/science.1254421">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0036-8075,%201095-9203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hellweger</foaf:surname>
+                        <foaf:givenname>F. L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>van Sebille</foaf:surname>
+                        <foaf:givenname>E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fredrick</foaf:surname>
+                        <foaf:givenname>N. D.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.sciencemag.org/cgi/doi/10.1126/science.1254421</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1346-1349</bib:pages>
+        <dc:date>2014-09-12</dc:date>
+        <dcterms:dateSubmitted>2015-02-17 20:49:18</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Biogeographic patterns in ocean microbes emerge in a neutral agent-based model</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0036-8075,%201095-9203">
+        <prism:volume>345</prism:volume>
+        <prism:number>6202</prism:number>
+        <dc:title>Science</dc:title>
+        <dc:identifier>ISSN 0036-8075, 1095-9203</dc:identifier>
+        <dc:identifier>DOI 10.1126/science.1254421</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.jstor.org/stable/info/10.1086/679585">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:00030147,%2015375323"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kraemer</foaf:surname>
+                        <foaf:givenname>Susanne A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kassen</foaf:surname>
+                        <foaf:givenname>Rees</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.jstor.org/stable/info/10.1086/679585</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>317-331</bib:pages>
+        <dc:date>03/2015</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 21:44:31</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Patterns of Local Adaptation in Space and Time among Soil Bacteria</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:00030147,%2015375323">
+        <prism:volume>185</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>The American Naturalist</dc:title>
+        <dc:identifier>ISSN 00030147, 15375323</dc:identifier>
+        <dc:identifier>DOI 10.1086/679585</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="#item_2388">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>14</prism:volume>
+                <prism:number>5</prism:number>
+                <dc:title>Nature Reviews Cancer</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Korolev</foaf:surname>
+                        <foaf:givenname>Kirill S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xavier</foaf:surname>
+                        <foaf:givenname>Joao B.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gore</foaf:surname>
+                        <foaf:givenname>Jeff</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:pages>371-380</bib:pages>
+        <dc:date>2014</dc:date>
+        <dc:title>Turning ecology and evolution against cancer</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1034/j.1600-0706.2002.960301.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:00301299"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dennis</foaf:surname>
+                        <foaf:givenname>Brian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_4895"/>
+        <link:link rdf:resource="#item_5053"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1034/j.1600-0706.2002.960301.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>389-401</bib:pages>
+        <dc:date>03/2002</dc:date>
+        <dcterms:dateSubmitted>2015-02-17 20:52:14</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Allee effects in stochastic populations</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:00301299">
+        <prism:volume>96</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Oikos</dc:title>
+        <dc:identifier>ISSN 00301299</dc:identifier>
+        <dc:identifier>DOI 10.1034/j.1600-0706.2002.960301.x</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_4895">
+       <rdf:value>&lt;p&gt;Suggested weibull method&lt;/p&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_5053">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:Dennis - 2002 - Allee Effects in Stochastic Populations.pdf"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.jstor.org/stable/pdfplus/10.2307/3547064.pdf?acceptTC=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2016-01-30 22:00:10</dcterms:dateSubmitted>
+        <dc:title>JSTOR Full Text PDF</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_2394">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <prism:volume>13</prism:volume><prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Galgiani</foaf:surname>
+                        <foaf:givenname>John N.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stevens</foaf:surname>
+                        <foaf:givenname>David A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:pages>249-254</bib:pages>
+        <dc:date>1978</dc:date>
+        <dc:title>Turbidimetric Studies of Growth Inhibition of Yeasts with Three Drugs: Inquiry into Inoculum-Dependent Susceptibility Testing, Time of Onset of Drug Effect, and Implications for Current and Newer Methods</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1002/jez.1400610202">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0022-104X,%201097-010X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Allee</foaf:surname>
+                        <foaf:givenname>W. C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bowen</foaf:surname>
+                        <foaf:givenname>Edith S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://doi.wiley.com/10.1002/jez.1400610202</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>185-207</bib:pages>
+        <dc:date>02/1932</dc:date>
+        <dcterms:dateSubmitted>2015-02-27 21:26:29</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Studies in animal aggregations: Mass protection against colloidal silver among goldfishes</dc:title>
+        <z:shortTitle>Studies in animal aggregations</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0022-104X,%201097-010X">
+        <prism:volume>61</prism:volume>
+        <prism:number>2</prism:number>
+        <dc:title>Journal of Experimental Zoology</dc:title>
+        <dc:identifier>ISSN 0022-104X, 1097-010X</dc:identifier>
+        <dc:identifier>DOI 10.1002/jez.1400610202</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://aem.asm.org/cgi/doi/10.1128/AEM.72.1.802-810.2006">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0099-2240"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dunn</foaf:surname>
+                        <foaf:givenname>A. K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Millikan</foaf:surname>
+                        <foaf:givenname>D. S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adin</foaf:surname>
+                        <foaf:givenname>D. M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bose</foaf:surname>
+                        <foaf:givenname>J. L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stabb</foaf:surname>
+                        <foaf:givenname>E. V.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://aem.asm.org/cgi/doi/10.1128/AEM.72.1.802-810.2006</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>802-810</bib:pages>
+        <dc:date>2006-01-01</dc:date>
+        <dcterms:dateSubmitted>2015-02-26 16:11:16</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>New rfp- and pES213-Derived Tools for Analyzing Symbiotic Vibrio fischeri Reveal Patterns of Infection and lux Expression In Situ</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0099-2240">
+        <prism:volume>72</prism:volume>
+        <prism:number>1</prism:number>
+        <dc:title>Applied and Environmental Microbiology</dc:title>
+        <dc:identifier>ISSN 0099-2240</dc:identifier>
+        <dc:identifier>DOI 10.1128/AEM.72.1.802-810.2006</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.sciencemag.org/cgi/doi/10.1126/science.1125669">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>312</prism:volume>
+                <prism:number>5776</prism:number>
+                <dc:title>Science</dc:title>
+                <dc:identifier>ISSN 0036-8075, 1095-9203</dc:identifier>
+                <dc:identifier>DOI 10.1126/science.1125669</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Telford</foaf:surname>
+                        <foaf:givenname>R. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.sciencemag.org/cgi/doi/10.1126/science.1125669</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1015-1015</bib:pages>
+        <dc:date>2006-05-19</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 20:57:55</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Dispersal Limitations Matter for Microbial Morphospecies</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://www.sciencemag.org/cgi/doi/10.1126/science.1219805">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>336</prism:volume>
+                <prism:number>6085</prism:number>
+                <dc:title>Science</dc:title>
+                <dc:identifier>ISSN 0036-8075, 1095-9203</dc:identifier>
+                <dc:identifier>DOI 10.1126/science.1219805</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dai</foaf:surname>
+                        <foaf:givenname>L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vorselen</foaf:surname>
+                        <foaf:givenname>D.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Korolev</foaf:surname>
+                        <foaf:givenname>K. S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gore</foaf:surname>
+                        <foaf:givenname>J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.sciencemag.org/cgi/doi/10.1126/science.1219805</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1175-1177</bib:pages>
+        <dc:date>2012-05-31</dc:date>
+        <dc:description>00076</dc:description>
+        <dcterms:dateSubmitted>2013-12-03 14:28:48</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>Generic Indicators for Loss of Resilience Before a Tipping Point Leading to Population Collapse</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://www.pnas.org/cgi/doi/10.1073/pnas.1317472110">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0027-8424,%201091-6490"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kreft</foaf:surname>
+                        <foaf:givenname>J.-U.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Plugge</foaf:surname>
+                        <foaf:givenname>C. M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grimm</foaf:surname>
+                        <foaf:givenname>V.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Prats</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leveau</foaf:surname>
+                        <foaf:givenname>J. H. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Banitz</foaf:surname>
+                        <foaf:givenname>T.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baines</foaf:surname>
+                        <foaf:givenname>S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Clark</foaf:surname>
+                        <foaf:givenname>J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ros</foaf:surname>
+                        <foaf:givenname>A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klapper</foaf:surname>
+                        <foaf:givenname>I.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Topping</foaf:surname>
+                        <foaf:givenname>C. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Field</foaf:surname>
+                        <foaf:givenname>A. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schuler</foaf:surname>
+                        <foaf:givenname>A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Litchman</foaf:surname>
+                        <foaf:givenname>E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hellweger</foaf:surname>
+                        <foaf:givenname>F. L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.pnas.org/cgi/doi/10.1073/pnas.1317472110</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>18027-18028</bib:pages>
+        <dc:date>2013-11-05</dc:date>
+        <dcterms:dateSubmitted>2015-03-25 17:18:32</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Mighty small: Observing and modeling individual microbes becomes big science</dc:title>
+        <z:shortTitle>Mighty small</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0027-8424,%201091-6490">
+        <prism:volume>110</prism:volume>
+        <prism:number>45</prism:number>
+        <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+        <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+        <dc:identifier>DOI 10.1073/pnas.1317472110</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.pnas.org/cgi/doi/10.1073/pnas.1212424110">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>110</prism:volume>
+                <prism:number>6</prism:number>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+                <dc:identifier>DOI 10.1073/pnas.1212424110</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sul</foaf:surname>
+                        <foaf:givenname>W. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oliver</foaf:surname>
+                        <foaf:givenname>T. A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ducklow</foaf:surname>
+                        <foaf:givenname>H. W.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Amaral-Zettler</foaf:surname>
+                        <foaf:givenname>L. A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sogin</foaf:surname>
+                        <foaf:givenname>M. L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.pnas.org/cgi/doi/10.1073/pnas.1212424110</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>2342-2347</bib:pages>
+        <dc:date>2013-02-05</dc:date>
+        <dcterms:dateSubmitted>2015-02-24 16:01:51</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Marine bacteria exhibit a bipolar distribution</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="#item_2419">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>3</prism:volume>
+                <prism:number>4</prism:number>
+                <dc:title>Natural Resource Modeling</dc:title>
+                <dcterms:alternative>Nat. Res. Model</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dennis</foaf:surname>
+                        <foaf:givenname>Brian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:pages>481-538</bib:pages>
+        <dc:date>1989</dc:date>
+        <dc:title>Allee effects: population growth, critical density, and the chance of extinction</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="#item_2421">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0749-503X,%201097-0061"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steels</foaf:surname>
+                        <foaf:givenname>H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>James</foaf:surname>
+                        <foaf:givenname>S. A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roberts</foaf:surname>
+                        <foaf:givenname>I. N.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stratford</foaf:surname>
+                        <foaf:givenname>M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:pages>1173-1183</bib:pages>
+        <dc:date>2000-09-30</dc:date>
+        <dcterms:dateSubmitted>2015-02-27 21:10:21</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Sorbic acid resistance: the inoculum effect</dc:title>
+        <z:shortTitle>Sorbic acid resistance</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0749-503X,%201097-0061">
+        <prism:volume>16</prism:volume>
+        <prism:number>13</prism:number>
+        <dc:title>Yeast</dc:title>
+        <dc:identifier>ISSN 0749-503X, 1097-0061</dc:identifier>
+        <dc:identifier>DOI 10.1002/1097-0061(20000930)16:13&lt;1173::AID-YEA617&gt;3.0.CO;2-8</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1111/j.1462-2920.2006.01017.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1462-2912,%201462-2920"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>de Wit</foaf:surname>
+                        <foaf:givenname>Rutger</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bouvier</foaf:surname>
+                        <foaf:givenname>Thierry</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1111/j.1462-2920.2006.01017.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>755-758</bib:pages>
+        <dc:date>04/2006</dc:date>
+        <dcterms:dateSubmitted>2015-02-27 21:24:29</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>'Everything is everywhere, but, the environment selects'; what did Baas Becking and Beijerinck really say?</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1462-2912,%201462-2920">
+        <prism:volume>8</prism:volume>
+        <prism:number>4</prism:number>
+        <dc:title>Environmental Microbiology</dc:title>
+        <dc:identifier>ISSN 1462-2912, 1462-2920</dc:identifier>
+        <dc:identifier>DOI 10.1111/j.1462-2920.2006.01017.x</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://microbialcell.com/researcharticles/quorum-protection-growth-and-survival/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:23112638"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Macreadie</foaf:surname>
+                        <foaf:givenname>Ian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://microbialcell.com/researcharticles/quorum-protection-growth-and-survival/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>38-42</bib:pages>
+        <dc:date>2015-02-02</dc:date>
+        <dcterms:dateSubmitted>2015-02-26 00:32:07</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>Quorum protection, growth and survival</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:23112638">
+        <prism:volume>2</prism:volume>
+        <prism:number>2</prism:number>
+        <dc:title>Microbial Cell</dc:title>
+        <dc:identifier>ISSN 23112638</dc:identifier>
+        <dc:identifier>DOI 10.15698/mic2015.02.188</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://link.springer.com/10.1007/s00442-008-1011-4">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0029-8549,%201432-1939"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ward</foaf:surname>
+                        <foaf:givenname>Darren M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nislow</foaf:surname>
+                        <foaf:givenname>Keith H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Folt</foaf:surname>
+                        <foaf:givenname>Carol L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/s00442-008-1011-4</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>515-522</bib:pages>
+        <dc:date>6/2008</dc:date>
+        <dcterms:dateSubmitted>2015-02-27 21:37:33</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Predators reverse the direction of density dependence for juvenile salmon mortality</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0029-8549,%201432-1939">
+        <prism:volume>156</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Oecologia</dc:title>
+        <dc:identifier>ISSN 0029-8549, 1432-1939</dc:identifier>
+        <dc:identifier>DOI 10.1007/s00442-008-1011-4</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.pnas.org/cgi/doi/10.1073/pnas.1401887111">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>111</prism:volume>
+                <prism:number>20</prism:number>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+                <dc:identifier>DOI 10.1073/pnas.1401887111</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pedler</foaf:surname>
+                        <foaf:givenname>B. E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aluwihare</foaf:surname>
+                        <foaf:givenname>L. I.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Azam</foaf:surname>
+                        <foaf:givenname>F.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.pnas.org/cgi/doi/10.1073/pnas.1401887111</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>7202-7207</bib:pages>
+        <dc:date>2014-05-20</dc:date>
+        <dcterms:dateSubmitted>2015-02-26 15:05:30</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Single bacterial strain capable of significant contribution to carbon cycling in the surface ocean</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1111/j.1461-0248.2010.01544.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1461023X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Litchman</foaf:surname>
+                        <foaf:givenname>Elena</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1111/j.1461-0248.2010.01544.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1560-1572</bib:pages>
+        <dc:date>12/2010</dc:date>
+        <dcterms:dateSubmitted>2015-03-01 22:17:49</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Invisible invaders: non-pathogenic invasive microbes in aquatic and terrestrial ecosystems: Invasive microbes</dc:title>
+        <z:shortTitle>Invisible invaders</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1461023X">
+        <prism:volume>13</prism:volume>
+        <prism:number>12</prism:number>
+        <dc:title>Ecology Letters</dc:title>
+        <dc:identifier>ISSN 1461023X</dc:identifier>
+        <dc:identifier>DOI 10.1111/j.1461-0248.2010.01544.x</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1111/j.1365-2656.2009.01657.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:00218790,%2013652656"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kramer</foaf:surname>
+                        <foaf:givenname>Andrew M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Drake</foaf:surname>
+                        <foaf:givenname>John M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1111/j.1365-2656.2009.01657.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>633-639</bib:pages>
+        <dc:date>05/2010</dc:date>
+        <dcterms:dateSubmitted>2015-02-17 20:47:29</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Experimental demonstration of population extinction due to a predator-driven Allee effect</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:00218790,%2013652656">
+        <prism:volume>79</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Journal of Animal Ecology</dc:title>
+        <dc:identifier>ISSN 00218790, 13652656</dc:identifier>
+        <dc:identifier>DOI 10.1111/j.1365-2656.2009.01657.x</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.pnas.org/cgi/doi/10.1073/pnas.0707200104">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>104</prism:volume>
+                <prism:number>51</prism:number>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+                <dc:identifier>DOI 10.1073/pnas.0707200104</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Van der Gucht</foaf:surname>
+                        <foaf:givenname>K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cottenie</foaf:surname>
+                        <foaf:givenname>K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Muylaert</foaf:surname>
+                        <foaf:givenname>K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vloemans</foaf:surname>
+                        <foaf:givenname>N.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cousin</foaf:surname>
+                        <foaf:givenname>S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Declerck</foaf:surname>
+                        <foaf:givenname>S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jeppesen</foaf:surname>
+                        <foaf:givenname>E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Conde-Porcuna</foaf:surname>
+                        <foaf:givenname>J.-M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schwenk</foaf:surname>
+                        <foaf:givenname>K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zwart</foaf:surname>
+                        <foaf:givenname>G.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Degans</foaf:surname>
+                        <foaf:givenname>H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vyverman</foaf:surname>
+                        <foaf:givenname>W.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>De Meester</foaf:surname>
+                        <foaf:givenname>L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.pnas.org/cgi/doi/10.1073/pnas.0707200104</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>20404-20409</bib:pages>
+        <dc:date>2007-12-18</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 21:02:20</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>The power of species sorting: Local factors drive bacterial community composition over a wide range of spatial scales</dc:title>
+        <z:shortTitle>The power of species sorting</z:shortTitle>
+    </bib:Article>
+    <bib:Article rdf:about="http://www.int-res.com/abstracts/ame/v60/n1/p1-13/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0948-3055,%201616-1564"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lyons</foaf:surname>
+                        <foaf:givenname>Mm</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ward</foaf:surname>
+                        <foaf:givenname>Je</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gaff</foaf:surname>
+                        <foaf:givenname>H</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hicks</foaf:surname>
+                        <foaf:givenname>Re</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Drake</foaf:surname>
+                        <foaf:givenname>Jm</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dobbs</foaf:surname>
+                        <foaf:givenname>Fc</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.int-res.com/abstracts/ame/v60/n1/p1-13/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1-13</bib:pages>
+        <dc:date>2010-05-04</dc:date>
+        <dcterms:dateSubmitted>2014-08-05 14:27:25</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Theory of island biogeography on a microscopic scale: organic aggregates as islands for aquatic pathogens</dc:title>
+        <z:shortTitle>Theory of island biogeography on a microscopic scale</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0948-3055,%201616-1564">
+        <prism:volume>60</prism:volume>
+        <prism:number>1</prism:number>
+        <dc:title>Aquatic Microbial Ecology</dc:title>
+        <dc:identifier>ISSN 0948-3055, 1616-1564</dc:identifier>
+        <dc:identifier>DOI 10.3354/ame01417</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://dx.plos.org/10.1371/journal.pone.0076991">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1932-6203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vivant</foaf:surname>
+                        <foaf:givenname>Anne-Laure</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Garmyn</foaf:surname>
+                        <foaf:givenname>Dominique</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maron</foaf:surname>
+                        <foaf:givenname>Pierre-Alain</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nowak</foaf:surname>
+                        <foaf:givenname>Virginie</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Piveteau</foaf:surname>
+                        <foaf:givenname>Pascal</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenname>Ching-Hong</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://dx.plos.org/10.1371/journal.pone.0076991</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>e76991</bib:pages>
+        <dc:date>2013-10-8</dc:date>
+        <dcterms:dateSubmitted>2015-04-08 15:42:12</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Microbial Diversity and Structure Are Drivers of the Biological Barrier Effect against Listeria monocytogenes in Soil</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1932-6203">
+        <prism:volume>8</prism:volume>
+        <prism:number>10</prism:number>
+        <dc:title>PLoS ONE</dc:title>
+        <dc:identifier>ISSN 1932-6203</dc:identifier>
+        <dc:identifier>DOI 10.1371/journal.pone.0076991</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.nature.com/doifinder/10.1038/nrmicro1643">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1740-1526,%201740-1534"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Prosser</foaf:surname>
+                        <foaf:givenname>James I.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bohannan</foaf:surname>
+                        <foaf:givenname>Brendan J. M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Curtis</foaf:surname>
+                        <foaf:givenname>Tom P.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ellis</foaf:surname>
+                        <foaf:givenname>Richard J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Firestone</foaf:surname>
+                        <foaf:givenname>Mary K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Freckleton</foaf:surname>
+                        <foaf:givenname>Rob P.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Green</foaf:surname>
+                        <foaf:givenname>Jessica L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Green</foaf:surname>
+                        <foaf:givenname>Laura E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Killham</foaf:surname>
+                        <foaf:givenname>Ken</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lennon</foaf:surname>
+                        <foaf:givenname>Jack J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Osborn</foaf:surname>
+                        <foaf:givenname>A. Mark</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Solan</foaf:surname>
+                        <foaf:givenname>Martin</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>van der Gast</foaf:surname>
+                        <foaf:givenname>Christopher J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Young</foaf:surname>
+                        <foaf:givenname>J. Peter W.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.nature.com/doifinder/10.1038/nrmicro1643</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>384-392</bib:pages>
+        <dc:date>5/2007</dc:date>
+        <dcterms:dateSubmitted>2014-08-05 14:25:06</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>The role of ecological theory in microbial ecology</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1740-1526,%201740-1534">
+        <prism:volume>5</prism:volume>
+        <prism:number>5</prism:number>
+        <dc:title>Nature Reviews Microbiology</dc:title>
+        <dc:identifier>ISSN 1740-1526, 1740-1534</dc:identifier>
+        <dc:identifier>DOI 10.1038/nrmicro1643</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.annualreviews.org/doi/abs/10.1146/annurev.cellbio.21.012704.131001">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1081-0706,%201530-8995"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Waters</foaf:surname>
+                        <foaf:givenname>Christopher M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bassler</foaf:surname>
+                        <foaf:givenname>Bonnie L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.annualreviews.org/doi/abs/10.1146/annurev.cellbio.21.012704.131001</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>319-346</bib:pages>
+        <dc:date>11/2005</dc:date>
+        <dcterms:dateSubmitted>2015-03-01 22:44:48</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>QUORUM SENSING: Cell-to-Cell Communication in Bacteria</dc:title>
+        <z:shortTitle>QUORUM SENSING</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1081-0706,%201530-8995">
+        <prism:volume>21</prism:volume>
+        <prism:number>1</prism:number>
+        <dc:title>Annual Review of Cell and Developmental Biology</dc:title>
+        <dc:identifier>ISSN 1081-0706, 1530-8995</dc:identifier>
+        <dc:identifier>DOI 10.1146/annurev.cellbio.21.012704.131001</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.nature.com/doifinder/10.1038/ismej.2011.119">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1751-7362,%201751-7370"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barberán</foaf:surname>
+                        <foaf:givenname>Albert</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bates</foaf:surname>
+                        <foaf:givenname>Scott T</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Casamayor</foaf:surname>
+                        <foaf:givenname>Emilio O</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fierer</foaf:surname>
+                        <foaf:givenname>Noah</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.nature.com/doifinder/10.1038/ismej.2011.119</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>343-351</bib:pages>
+        <dc:date>2/2012</dc:date>
+        <dcterms:dateSubmitted>2015-04-08 15:41:42</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>Using network analysis to explore co-occurrence patterns in soil microbial communities</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1751-7362,%201751-7370">
+        <prism:volume>6</prism:volume>
+        <prism:number>2</prism:number>
+        <dc:title>The ISME Journal</dc:title>
+        <dc:identifier>ISSN 1751-7362, 1751-7370</dc:identifier>
+        <dc:identifier>DOI 10.1038/ismej.2011.119</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.nature.com/doifinder/10.1038/nrmicro1341">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>4</prism:volume>
+                <prism:number>2</prism:number>
+                <dc:title>Nature Reviews Microbiology</dc:title>
+                <dc:identifier>ISSN 1740-1526, 1740-1534</dc:identifier>
+                <dc:identifier>DOI 10.1038/nrmicro1341</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Martiny</foaf:surname>
+                        <foaf:givenname>Jennifer B. Hughes</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bohannan</foaf:surname>
+                        <foaf:givenname>Brendan J.M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brown</foaf:surname>
+                        <foaf:givenname>James H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Colwell</foaf:surname>
+                        <foaf:givenname>Robert K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fuhrman</foaf:surname>
+                        <foaf:givenname>Jed A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Green</foaf:surname>
+                        <foaf:givenname>Jessica L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Horner-Devine</foaf:surname>
+                        <foaf:givenname>M. Claire</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kane</foaf:surname>
+                        <foaf:givenname>Matthew</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krumins</foaf:surname>
+                        <foaf:givenname>Jennifer Adams</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kuske</foaf:surname>
+                        <foaf:givenname>Cheryl R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Morin</foaf:surname>
+                        <foaf:givenname>Peter J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naeem</foaf:surname>
+                        <foaf:givenname>Shahid</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Øvreås</foaf:surname>
+                        <foaf:givenname>Lise</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reysenbach</foaf:surname>
+                        <foaf:givenname>Anna-Louise</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Smith</foaf:surname>
+                        <foaf:givenname>Val H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Staley</foaf:surname>
+                        <foaf:givenname>James T.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.nature.com/doifinder/10.1038/nrmicro1341</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>102-112</bib:pages>
+        <dc:date>2/2006</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 22:39:08</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>Microbial biogeography: putting microorganisms on the map</dc:title>
+        <z:shortTitle>Microbial biogeography</z:shortTitle>
+    </bib:Article>
+    <bib:Article rdf:about="http://linkinghub.elsevier.com/retrieve/pii/S0167779914001504">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:01677799"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Saleem</foaf:surname>
+                        <foaf:givenname>Muhammad</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moe</foaf:surname>
+                        <foaf:givenname>Luke A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://linkinghub.elsevier.com/retrieve/pii/S0167779914001504</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>529-537</bib:pages>
+        <dc:date>10/2014</dc:date>
+        <dcterms:dateSubmitted>2015-03-26 19:32:48</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Multitrophic microbial interactions for eco- and agro-biotechnological processes: theory and practice</dc:title>
+        <z:shortTitle>Multitrophic microbial interactions for eco- and agro-biotechnological processes</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:01677799">
+        <prism:volume>32</prism:volume>
+        <prism:number>10</prism:number>
+        <dc:title>Trends in Biotechnology</dc:title>
+        <dc:identifier>ISSN 01677799</dc:identifier>
+        <dc:identifier>DOI 10.1016/j.tibtech.2014.08.002</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1111/j.0021-8901.2004.00944.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:00218901,%2013652664"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gascoigne</foaf:surname>
+                        <foaf:givenname>Joanna C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lipcius</foaf:surname>
+                        <foaf:givenname>Romuald N.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1111/j.0021-8901.2004.00944.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>801-810</bib:pages>
+        <dc:date>2004-09-30</dc:date>
+        <dcterms:dateSubmitted>2015-02-27 21:35:25</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Allee effects driven by predation: Predation-driven Allee effects</dc:title>
+        <z:shortTitle>Allee effects driven by predation</z:shortTitle>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:00218901,%2013652664">
+        <prism:volume>41</prism:volume>
+        <prism:number>5</prism:number>
+        <dc:title>Journal of Applied Ecology</dc:title>
+        <dc:identifier>ISSN 00218901, 13652664</dc:identifier>
+        <dc:identifier>DOI 10.1111/j.0021-8901.2004.00944.x</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.pnas.org/cgi/doi/10.1073/pnas.0808945106">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>106</prism:volume>
+                <prism:number>21</prism:number>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+                <dc:identifier>DOI 10.1073/pnas.0808945106</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reno</foaf:surname>
+                        <foaf:givenname>M. L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Held</foaf:surname>
+                        <foaf:givenname>N. L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fields</foaf:surname>
+                        <foaf:givenname>C. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Burke</foaf:surname>
+                        <foaf:givenname>P. V.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Whitaker</foaf:surname>
+                        <foaf:givenname>R. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.pnas.org/cgi/doi/10.1073/pnas.0808945106</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>8605-8610</bib:pages>
+        <dc:date>2009-05-26</dc:date>
+        <dcterms:dateSubmitted>2015-02-17 20:49:07</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Biogeography of the Sulfolobus islandicus pan-genome</dc:title>
+    </bib:Article>
+    <bib:Book rdf:about="#item_2482">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>The Hague, the Netherlands</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>W.P. Van Stockum &amp; Zoon (in Dutch)</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baas Becking</foaf:surname>
+                        <foaf:givenname>L.G.M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:date>1934</dc:date>
+        <dc:title>Geobiologie of inleiding tot de milieukunde</dc:title>
+    </bib:Book>
+    <bib:Article rdf:about="http://www.jstor.org/stable/5961?origin=crossref">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:00218790"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Green</foaf:surname>
+                        <foaf:givenname>R.E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.jstor.org/stable/5961?origin=crossref</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>25</bib:pages>
+        <dc:date>01/1997</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 22:12:32</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>The Influence of Numbers Released on the Outcome of Attempts to Introduce Exotic Bird Species to New Zealand</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:00218790">
+        <prism:volume>66</prism:volume>
+        <prism:number>1</prism:number>
+        <dc:title>The Journal of Animal Ecology</dc:title>
+        <dc:identifier>ISSN 00218790</dc:identifier>
+        <dc:identifier>DOI 10.2307/5961</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.pnas.org/cgi/doi/10.1073/pnas.0606053103">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>103</prism:volume>
+                <prism:number>36</prism:number>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+                <dc:identifier>DOI 10.1073/pnas.0606053103</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Axelrod</foaf:surname>
+                        <foaf:givenname>R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Axelrod</foaf:surname>
+                        <foaf:givenname>D. E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pienta</foaf:surname>
+                        <foaf:givenname>K. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.pnas.org/cgi/doi/10.1073/pnas.0606053103</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>13474-13479</bib:pages>
+        <dc:date>2006-09-05</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 17:11:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Evolution of cooperation among tumor cells</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1111/j.1523-1739.2007.00721.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0888-8892,%201523-1739"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Angulo</foaf:surname>
+                        <foaf:givenname>Elena</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roemer</foaf:surname>
+                        <foaf:givenname>Gary W.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Berec</foaf:surname>
+                        <foaf:givenname>LuděK</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gascoigne</foaf:surname>
+                        <foaf:givenname>Joanna</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Courchamp</foaf:surname>
+                        <foaf:givenname>Franck</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1111/j.1523-1739.2007.00721.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>1082-1091</bib:pages>
+        <dc:date>08/2007</dc:date>
+        <dcterms:dateSubmitted>2015-02-27 21:30:41</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Double Allee Effects and Extinction in the Island Fox</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0888-8892,%201523-1739">
+        <prism:volume>21</prism:volume>
+        <prism:number>4</prism:number>
+        <dc:title>Conservation Biology</dc:title>
+        <dc:identifier>ISSN 0888-8892, 1523-1739</dc:identifier>
+        <dc:identifier>DOI 10.1111/j.1523-1739.2007.00721.x</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://link.springer.com/10.1007/s002480000060">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0095-3628,%201432-184X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ishigaki</foaf:surname>
+                        <foaf:givenname>T.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sleigh</foaf:surname>
+                        <foaf:givenname>M.A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/s002480000060</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>264-271</bib:pages>
+        <dc:date>4/2001</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 18:44:05</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Grazing Characteristics and Growth Efficiencies at Two Different Temperatures for Three Nanoflagellates Fed with Vibrio Bacteria at Three Different Concentrations</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0095-3628,%201432-184X">
+        <prism:volume>41</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Microbial Ecology</dc:title>
+        <dc:identifier>ISSN 0095-3628, 1432-184X</dc:identifier>
+        <dc:identifier>DOI 10.1007/s002480000060</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.nature.com/doifinder/10.1038/ismej.2014.132">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>9</prism:volume>
+                <prism:number>2</prism:number>
+                <dc:title>The ISME Journal</dc:title>
+                <dc:identifier>ISSN 1751-7362, 1751-7370</dc:identifier>
+                <dc:identifier>DOI 10.1038/ismej.2014.132</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Knight</foaf:surname>
+                        <foaf:givenname>Sarah</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goddard</foaf:surname>
+                        <foaf:givenname>Matthew R</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.nature.com/doifinder/10.1038/ismej.2014.132</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>361-370</bib:pages>
+        <dc:date>2/2015</dc:date>
+        <dcterms:dateSubmitted>2015-02-26 03:06:24</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>Quantifying separation and similarity in a Saccharomyces cerevisiae metapopulation</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://rspb.royalsocietypublishing.org/cgi/doi/10.1098/rspb.2001.1816">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0962-8452,%201471-2954"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Regoes</foaf:surname>
+                        <foaf:givenname>R. R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ebert</foaf:surname>
+                        <foaf:givenname>D.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bonhoeffer</foaf:surname>
+                        <foaf:givenname>S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4908"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://rspb.royalsocietypublishing.org/cgi/doi/10.1098/rspb.2001.1816</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>271-279</bib:pages>
+        <dc:date>2002-02-07</dc:date>
+        <dcterms:dateSubmitted>2012-01-12 16:58:52</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>Dose-dependent infection rates of parasites produce the Allee effect in epidemiology</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0962-8452,%201471-2954">
+        <prism:volume>269</prism:volume>
+        <prism:number>1488</prism:number>
+        <dc:title>Proceedings of the Royal Society B: Biological Sciences</dc:title>
+        <dc:identifier>ISSN 0962-8452, 1471-2954</dc:identifier>
+        <dc:identifier>DOI 10.1098/rspb.2001.1816</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_4908">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:3067916.pdf"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.jstor.org/stable/pdfplus/3067916.pdf?acceptTC=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-01-12 16:59:31</dcterms:dateSubmitted>
+        <dc:title>3067916.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://iai.asm.org/cgi/doi/10.1128/IAI.68.9.4839-4849.2000">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0019-9567"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>de Kievit</foaf:surname>
+                        <foaf:givenname>T. R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Iglewski</foaf:surname>
+                        <foaf:givenname>B. H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_4889"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://iai.asm.org/cgi/doi/10.1128/IAI.68.9.4839-4849.2000</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>4839-4849</bib:pages>
+        <dc:date>2000-09-01</dc:date>
+        <dcterms:dateSubmitted>2015-02-26 16:37:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Bacterial Quorum Sensing in Pathogenic Relationships</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0019-9567">
+        <prism:volume>68</prism:volume>
+        <prism:number>9</prism:number>
+        <dc:title>Infection and Immunity</dc:title>
+        <dc:identifier>ISSN 0019-9567</dc:identifier>
+        <dc:identifier>DOI 10.1128/IAI.68.9.4839-4849.2000</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_4889">
+       <rdf:value>&lt;p&gt;pathogen quorum sensing review&lt;/p&gt;</rdf:value>
+    </bib:Memo>
+    <bib:Article rdf:about="http://aem.asm.org/cgi/doi/10.1128/AEM.01594-12">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>78</prism:volume>
+                <prism:number>20</prism:number>
+                <dc:title>Applied and Environmental Microbiology</dc:title>
+                <dc:identifier>ISSN 0099-2240</dc:identifier>
+                <dc:identifier>DOI 10.1128/AEM.01594-12</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Richards</foaf:surname>
+                        <foaf:givenname>G. P.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fay</foaf:surname>
+                        <foaf:givenname>J. P.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dickens</foaf:surname>
+                        <foaf:givenname>K. A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parent</foaf:surname>
+                        <foaf:givenname>M. A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Soroka</foaf:surname>
+                        <foaf:givenname>D. S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Boyd</foaf:surname>
+                        <foaf:givenname>E. F.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://aem.asm.org/cgi/doi/10.1128/AEM.01594-12</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>7455-7466</bib:pages>
+        <dc:date>2012-10-15</dc:date>
+        <dcterms:dateSubmitted>2015-03-26 19:33:35</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Predatory Bacteria as Natural Modulators of Vibrio parahaemolyticus and Vibrio vulnificus in Seawater and Oysters</dc:title>
+    </bib:Article>
+    <bib:Article rdf:about="http://www.springerlink.com/index/10.1007/s10144-009-0152-6">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1438-3896,%201438-390X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kramer</foaf:surname>
+                        <foaf:givenname>Andrew M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dennis</foaf:surname>
+                        <foaf:givenname>Brian</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liebhold</foaf:surname>
+                        <foaf:givenname>Andrew M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Drake</foaf:surname>
+                        <foaf:givenname>John M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4898"/>
+        <link:link rdf:resource="#item_5061"/>
+        <link:link rdf:resource="#item_5062"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Behavioural Sciences</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Critical density</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Depensation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Evolutionary Biology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Forestry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Inverse density dependence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mate limitation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Plant Sciences</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Positive density dependence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Predator satiation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Zoology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/index/10.1007/s10144-009-0152-6</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>341-354</bib:pages>
+        <dc:date>2009-4-18</dc:date>
+        <dcterms:dateSubmitted>2012-01-11 18:50:10</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <dc:title>The evidence for Allee effects</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1438-3896,%201438-390X">
+        <prism:volume>51</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:title>Population Ecology</dc:title>
+        <dc:identifier>ISSN 1438-3896, 1438-390X</dc:identifier>
+        <dc:identifier>DOI 10.1007/s10144-009-0152-6</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_4898">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:fulltext.pdf"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.springerlink.com/content/66w36u73h7461244/fulltext.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-01-11 18:50:03</dcterms:dateSubmitted>
+        <dc:title>fulltext.pdf</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_5061">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:Kramer et al. - 2009 - The evidence for Allee effects.pdf"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/content/pdf/10.1007%2Fs10144-009-0152-6.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2016-01-30 22:02:18</dcterms:dateSubmitted>
+        <dc:title>Full Text PDF</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_5062">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:s10144-009-0152-6.html"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/article/10.1007/s10144-009-0152-6</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2016-01-30 22:02:22</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://doi.wiley.com/10.1111/j.1461-0248.2005.00787.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1461023X,%2014610248"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Taylor</foaf:surname>
+                        <foaf:givenname>Caz M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hastings</foaf:surname>
+                        <foaf:givenname>Alan</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://doi.wiley.com/10.1111/j.1461-0248.2005.00787.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>895-908</bib:pages>
+        <dc:date>08/2005</dc:date>
+        <dcterms:dateSubmitted>2015-06-07 22:09:08</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Allee effects in biological invasions</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1461023X,%2014610248">
+        <prism:volume>8</prism:volume>
+        <prism:number>8</prism:number>
+        <dc:title>Ecology Letters</dc:title>
+        <dc:identifier>ISSN 1461023X, 14610248</dc:identifier>
+        <dc:identifier>DOI 10.1111/j.1461-0248.2005.00787.x</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="http://www.journals.cambridge.org/abstract_S0954102013000448">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0954-1020,%201365-2079"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tikhonenkov</foaf:surname>
+                        <foaf:givenname>Denis</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.journals.cambridge.org/abstract_S0954102013000448</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <bib:pages>133-144</bib:pages>
+        <dc:date>04/2014</dc:date>
+        <dcterms:dateSubmitted>2015-08-03 19:24:41</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+        <z:language>en</z:language>
+        <dc:title>Species diversity and changes of communities of heterotrophic flagellates (protista) in response to glacial melt in King George Island, the South Shetland Islands, Antarctica</dc:title>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0954-1020,%201365-2079">
+        <prism:volume>26</prism:volume>
+        <prism:number>02</prism:number>
+        <dc:title>Antarctic Science</dc:title>
+        <dc:identifier>ISSN 0954-1020, 1365-2079</dc:identifier>
+        <dc:identifier>DOI 10.1017/S0954102013000448</dc:identifier>
+    </bib:Journal>
+</rdf:RDF>
